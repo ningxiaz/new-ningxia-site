@@ -1,0 +1,13 @@
+{
+  "generator-yeogurt": {
+    "config": {
+      "projectName": "Ningxia",
+      "htmlOption": "jade",
+      "jsPreprocessor": "none",
+      "cssOption": "sass",
+      "sassSyntax": "sass",
+      "testFramework": "none"
+    },
+    "version": "1.5.2"
+  }
+}
