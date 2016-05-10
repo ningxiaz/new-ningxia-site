@@ -1,6 +1,12 @@
 // Normalize Styles
 @import node_modules/normalize.css/normalize
 
+// Skeleton responsive
+@import skeleton
+
+// Global variables and styles
+@import typography
+
 // Import Modules
 @import ../_modules/link/link
 
@@ -13,26 +19,13 @@
   -webkit-box-sizing: border-box
   box-sizing: border-box
 
-.yeogurt-info
-  text-align: center
-  max-width: 500px
-  margin-left: auto
-  margin-right: auto
+// html is set to 100% so that all the REM measurements throughout
+// are based on 16px sizing. So basically 1rem = 16px :)
+html
+  font-size: 100%
 
-.version
-  font-size: 14px
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace
-  position: absolute
-  bottom: 10px
-  right: 10px
 
-.logo
-  margin-top: 15px
-
-// Styling on warning for users on IE7 or below
-.browsehappy
-  text-align: center
-  margin: 0
-  background: #fff8e2
-  color: #000
-  padding: 0.5em 0
+// Body global style
+body
+  font-family: $fontFamily-primary, 'Helvetica Neue', 'Helvetica', 'sans-serif'
+  color: #222
