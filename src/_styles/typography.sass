@@ -1,16 +1,74 @@
 // Typography variables and rules
 
-$fontFamily-primary: 'Futura W01';
-$fontFamily-accent: 'MTI Letter Gothic W01';
+$fontFamily-primary: 'Futura PT Multilingual W01'
+$fontFamily-accent: 'MTI Letter Gothic W01'
 
 // baseline grid size
-$baseline: 1.5rem;
+$baseline: 1.5rem
 
-$fontSize-1: 5.0625rem; // 81px
-$fontSize-2: 3.375rem; // 54px
-$fontSize-3: 2.25rem; // 36px
-$fontSize-4: 1.5rem; // 24px
-$fontSize-5: 1.125rem; // 18px for futura's small x-height
-$fontSize-6: 1rem; // 16px
+// type scale
+$fontSize-1: 3.552rem // 56.832px
+$fontSize-2: 2.665rem // 42.64px
+$fontSize-3: 1.999rem // 32px
+$fontSize-4: 1.5rem // 24px
+$fontSize-5: 1.125rem // 18px for futura's small x-height
+$fontSize-6: 1rem // 16px
+
+// font weight
+$fontWeight-primary-normal: 200
+$fontWeight-primary-medium: 500
+$fontWeight-primary-bold: 800
+$fontWeight-accent-bold: 700
+
+@mixin typeScale($rank: 6)
+  @if $rank == 1
+    font-size: $fontSize-1
+    line-height: 3*$baseline
+  @else if $rank == 2
+    font-size: $fontSize-2
+    line-height: 3*$baseline
+  @else if $rank == 3
+    font-size: $fontSize-3
+    line-height: 1.5
+  @else if $rank == 4
+    font-size: $fontSize-4
+    line-height: 1.5
+  @else if $rank == 5
+    font-size: $fontSize-5
+    line-height: $baseline
+  @else if $rank == 6
+    font-size: $fontSize-6
+    line-height: $baseline
+
+h1
+  @include typeScale(1)
+  font-weight: $fontWeight-primary-bold
+  letter-spacing: 0.012em
+  margin-bottom: $baseline
+
+h2
+  @include typeScale(3)
+  font-weight: $fontWeight-primary-bold
+  letter-spacing: 0.012em
+  margin-bottom: $baseline
+
+p.subtext
+  @include typeScale(3)
+  font-weight: $fontWeight-primary-normal
+  margin-bottom: $baseline
+
+h3
+  @include typeScale(4)
+  font-weight: $fontWeight-primary-bold
+  letter-spacing: 0.012em
+  margin-bottom: 0.5*$baseline
+
+label
+  font-family: $fontFamily-accent
+  @include typeScale(6)
+
+p
+  @include typeScale(5)
+  margin-bottom: $baseline
 
 
