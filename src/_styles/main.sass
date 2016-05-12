@@ -24,13 +24,30 @@
 html
   font-size: 100%
 
-
 // Body global style
 body
   font-family: $fontFamily-primary, 'Helvetica Neue', 'Helvetica', 'sans-serif'
   color: #222
   @include typeScale(6)
-  font-weight: $fontWeight-primary-normal
+  font-weight: $fontWeight-primary-regular
 
-.tagline
-  margin: 0
+.landing-text
+  margin-top: 25%
+  text-align: right
+
+.landing-name
+  @include typeScale(5)
+  margin-bottom: 2*$baseline
+  font-weight: $fontWeight-accent-regular
+
+.landing-tagline
+  margin: 0.5*$baseline 0
+
+.landing-bg
+  width: 48%
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  background: url('../images/landing_bg.jpg') no-repeat center center
+  background-size: cover

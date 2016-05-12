@@ -15,9 +15,10 @@ $fontSize-5: 1.125rem // 18px for futura's small x-height
 $fontSize-6: 1rem // 16px
 
 // font weight
-$fontWeight-primary-normal: 200
+$fontWeight-primary-regular: 200
 $fontWeight-primary-medium: 500
 $fontWeight-primary-bold: 800
+$fontWeight-accent-regular: 400
 $fontWeight-accent-bold: 700
 
 @mixin typeScale($rank: 6)
@@ -54,7 +55,7 @@ h2
 
 p.subtext
   @include typeScale(3)
-  font-weight: $fontWeight-primary-normal
+  font-weight: $fontWeight-primary-regular
   margin-bottom: $baseline
 
 h3
