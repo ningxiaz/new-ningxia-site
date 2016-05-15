@@ -1,0 +1,27 @@
+extend ./base
+
+include ../_modules/logo/logo
+include ../_modules/menu/menu
+
+//- Add extra stylesheets
+//- block append category
+
+block content
+
+  //- Provides layout level markup
+  +logo(class='logo')
+  +menu(class='menu')
+
+  .row.row--top
+    .large-4.columns
+      block title
+
+    .large-8.columns
+      block description
+
+  .row
+    .large-12.columns
+      block category-content
+
+//- // Add extra scripts
+//- block append scripts

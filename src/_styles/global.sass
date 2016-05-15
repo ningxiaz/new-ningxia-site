@@ -1,0 +1,36 @@
+// Global styles
+
+// Box sizing partial styles:
+// Apply a natural box layout model to all elements
+*,
+*:before,
+*:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+// html is set to 100% so that all the REM measurements throughout
+// are based on 16px sizing. So basically 1rem = 16px :)
+html
+  font-size: 100%
+
+// Body global style
+body
+  font-family: $fontFamily-primary, 'Helvetica Neue', 'Helvetica', 'sans-serif'
+  color: $color-grey-1
+  @include typeScale(6)
+  font-weight: $fontWeight-primary-regular
+
+.menu
+  position: fixed
+  top: $baseline
+  right: 2*$baseline
+
+.logo
+  position: fixed
+  top: $baseline
+  left: 2*$baseline
+
+.row--top
+  margin-top: 8*$baseline
+
