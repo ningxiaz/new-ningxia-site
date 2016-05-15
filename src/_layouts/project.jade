@@ -1,0 +1,18 @@
+extend ./base
+
+include ../_modules/logo/logo
+include ../_modules/menu/menu
+
+//- // Add extra stylesheets
+//- block append stylesheets
+
+block content
+
+  //- Provides layout level markup
+  +logo('../../')(class='logo')
+  +menu(class='menu')
+
+  block project-content
+
+//- // Add extra scripts
+//- block append scripts

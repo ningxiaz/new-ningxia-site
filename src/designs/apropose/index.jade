@@ -1,0 +1,14 @@
+extends ../../_layouts/project
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../'
+
+block project-content
+  .row.row--top
+    .large-12.columns
+      h1 Apropose
+      p.subtext.
+        Explore how to utilize design data to empower designers to make better decisions, more quickly, with more confidence.
+
+      include:markdown content.md

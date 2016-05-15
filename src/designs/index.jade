@@ -12,5 +12,8 @@ block description
     With a mixed background of Software Engineering, Human-Computer Interaction and Design Thinking, I aspire to design and build experiences that are useful, pleasant and meaningful.
 
 block category-content
-  p.
-    Here is the content
+  each project in site.data.designs
+    div.project
+      a(href='/designs/' + project.name)
+        h3= project.name
+      label= project.labels
