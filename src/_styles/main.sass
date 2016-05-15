@@ -7,11 +7,13 @@
 @import 'foundation'
 
 // Global variables and styles
-@import typography
-@import colors
+@import 'typography'
+@import 'colors'
+@import 'z-index'
 
 // Import Modules
 @import ../_modules/link/link
+@import ../_modules/menu/menu
 
 // Import page styling
 @import landing
@@ -36,3 +38,8 @@ body
   color: $color-grey-1
   @include typeScale(6)
   font-weight: $fontWeight-primary-regular
+
+.menu
+  position: fixed
+  top: $baseline
+  right: 2*$baseline

@@ -1,0 +1,97 @@
+// menu styles
+
+$height--menuButton: 24px
+$width--menuButton: 36px
+
+@keyframes fadeInRight
+  0%
+    opacity: 0
+    left: 6%
+  100%
+    opacity: 1
+    left: 0
+
+.menu-button
+  height: $height--menuButton
+  width: $width--menuButton
+  cursor: pointer
+  z-index: $zIndex--menuButton
+  transition: opacity .25s ease
+  position: relative
+
+  &:hover
+    opacity: .7
+
+  &.active
+    .top
+      transform: translateY(10px) translateX(0) rotate(45deg)
+    .middle
+      opacity: 0
+    .bottom
+      transform: translateY(-10px) translateX(0) rotate(-45deg)
+
+  span
+    background-color: $color-primary
+    height: 4px
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    transition: all .35 ease
+    cursor: pointer
+
+    &:nth-of-type(2)
+      top: 10px
+
+    &:nth-of-type(3)
+      top: 20px
+
+.menu-overlay
+  position: fixed
+  background-color: $color-light-bg
+  top: 0
+  left: 0
+  width: 100%
+  height: 0%
+  visibility: hidden
+  transition: opacity .35s, visibility .35s, height .35s
+  overflow: hidden
+
+  &.open
+    opacity: .9
+    visibility: visible
+    height: 100%
+
+    li
+      animation: fadeInRight .5s ease forwards
+      animation-delay: .35s
+
+      &:nth-of-type(2)
+        animation-delay: .4s
+
+      &:nth-of-type(3)
+        animation-delay: .45s
+
+      &:nth-of-type(4)
+        animation-delay: .5s
+
+      &:nth-of-type(5)
+        animation-delay: .55s
+
+  nav
+    margin: 3*$baseline 2*$baseline
+
+  li
+    display: block
+    position: relative
+    opacity: 0
+
+    a
+      color: $color-grey-1
+      text-decoration: none
+      @include typeScale(1)
+      font-weight: $fontWeight-primary-bold
+
+
+
+

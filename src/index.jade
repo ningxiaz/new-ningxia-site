@@ -1,9 +1,12 @@
 extends _layouts/base
 
 include _modules/link/link
+include _modules/menu/menu
 
 block content
   .landing-bg
+
+  +menu(class='menu')
 
   .row
     .large-offset-5.large-7.columns

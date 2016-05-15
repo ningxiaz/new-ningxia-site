@@ -1,0 +1,24 @@
+mixin menu(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  div(class=spec.__class)&attributes(attributes)
+    .menu-button
+      span.top
+      span.middle
+      span.bottom
+
+    .menu-overlay
+      nav
+        ul
+          li
+            a(href='#') About
+          li
+            a(href='#') Design
+          li
+            a(href='#') Artworks
+          li
+            a(href='#') Writings
+          li
+            a(href='#') Music
+
