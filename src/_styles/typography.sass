@@ -18,10 +18,12 @@ $fontSize-6: 1rem // 16px
 
 // font weight
 $fontWeight-primary-regular: 200
-$fontWeight-primary-medium: 500
+$fontWeight-primary-medium: 400
 $fontWeight-primary-bold: 800
 $fontWeight-accent-regular: 400
 $fontWeight-accent-bold: 700
+
+$letterSpacing-primary: 0.012em
 
 @mixin typeScale($rank: 6)
   @if $rank == 1
@@ -49,13 +51,13 @@ h1, h2, p, h3, label, p
 h1
   @include typeScale(1)
   font-weight: $fontWeight-primary-bold
-  letter-spacing: 0.012em
+  letter-spacing: $letterSpacing-primary
   margin-bottom: $baseline
 
 h2
   @include typeScale(3)
   font-weight: $fontWeight-primary-bold
-  letter-spacing: 0.012em
+  letter-spacing: $letterSpacing-primary
   margin-bottom: $baseline
 
 p.subtext
@@ -66,7 +68,7 @@ p.subtext
 h3
   @include typeScale(4)
   font-weight: $fontWeight-primary-medium
-  letter-spacing: 0.012em
+  letter-spacing: $letterSpacing-primary
   margin-bottom: 0.5*$baseline
 
 label
@@ -76,5 +78,6 @@ label
 p
   @include typeScale(5)
   margin-bottom: $baseline
+  letter-spacing: $letterSpacing-primary
 
 

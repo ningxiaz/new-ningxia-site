@@ -12,5 +12,10 @@ block description
     I was never a good writer at school. Writing Chinese essays used to be my most annoying headache. Now I rediscover writing as a way to clarify and sort out my thoughts and ideas.
 
 block category-content
-  p.
-    Here is the content
+  .category-content
+    each post in site.data.writings
+      div.post
+        h3
+          a(href= post.link, target= '_blank')= post.title
+        p.post-preview= post.preview
+        .post-date= post.date

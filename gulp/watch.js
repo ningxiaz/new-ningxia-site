@@ -11,7 +11,8 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
       // Styles
       gulp.watch([
         path.join(dirs.source, dirs.styles, '**/*.{scss,sass}'),
-        path.join(dirs.source, dirs.modules, '**/*.{scss,sass}')
+        path.join(dirs.source, dirs.modules, '**/*.{scss,sass}'),
+        path.join(dirs.source, '**/*.{scss,sass}')
       ], ['sass']);
 
       // Jade Templates
