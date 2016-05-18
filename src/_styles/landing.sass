@@ -1,19 +1,14 @@
 // Landing syles
 
-.landing-text
-  margin-top: 50%
-  text-align: right
-
 .landing-name
-  @include typeScale(5)
-  margin-bottom: 2*$baseline
-  font-weight: $fontWeight-accent-bold
+  font-weight: $fontWeight-primary-bold
+  text-align: center
+  width: 100%
+  margin-top: $baseline
+  line-height: $baseline // the same height as the menu button
 
-.landing-tagline
-  margin: 0.5*$baseline 0
-
-.landing-bg
-  width: 48%
+.landing-image-half
+  width: 50%
   position: absolute
   top: 0
   bottom: 0
@@ -21,3 +16,53 @@
   background: url('../images/landing_bg.jpg') no-repeat center center
   background-size: cover
   z-index: $zIndex-negative
+
+  @media #{$small-only}
+    width: 100%
+    bottom: auto
+    min-height: 400px
+    position: static
+
+.landing-text-half
+  width: 50%
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  overflow-y: hidden
+
+  @media #{$small-only}
+    width: 100%
+    position: static
+
+.landing-text
+  text-align: center
+  padding: 6*$baseline $baseline
+
+.landing-label
+  @include typeScale(5)
+  margin-bottom: 2*$baseline
+  font-weight: $fontWeight-accent-bold
+
+.landing-tagline a
+  color: $color-grey-1
+  position: relative
+
+  &:before
+    content: ' '
+    position: absolute
+    bottom: .1em
+    height: .3em
+    background-color: $color-accent
+    width: 100%
+    left: 0
+    z-index: $zIndex-negative
+    transition: all .25s ease
+
+  &:hover:before
+    height: .6em
+
+  &:hover
+    opacity: 1
+
+
