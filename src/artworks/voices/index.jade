@@ -1,0 +1,12 @@
+extends ../../_layouts/project
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../'
+
+block project-content
+  .project-content
+    .row
+      .large-12.columns
+        a(href='/artworks') ← Back to my artworks
+        include:markdown content.md
