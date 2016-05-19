@@ -1,9 +1,30 @@
 // Category page styling
 
+.category-content
+  margin: 3*$baseline 0
+
 // Styles for project, both for designs and artworks
 .project
   display: inline-block
-  max-width: 49.5%
+  width: 27.75rem // 60rem full width with 3rem gutter, 1.5rem padding from columns
+  float: left
+  margin-bottom: 2*$baseline
+
+  &:nth-of-type(2n + 1)
+    margin-right: 2*$baseline
+
+  @media only screen and (max-width: 60rem)
+    width: 100%
+
+.project-thumbnail
+  width: 100%
+  margin-bottom: 0.5*$baseline
+
+.project-name
+  margin-bottom: 0
+
+  a
+    color: $color-grey-1
 
 // Styles for the writing section
 .post
@@ -16,6 +37,4 @@
   margin-bottom: 0.5*$baseline
 
 .post-date
-  font-family: $fontFamily-accent
   color: $color-grey-2
-  font-size: 0.875rem // to adjust the size of letter gothic, which looks much bigger

@@ -15,6 +15,7 @@ $fontSize-3: 1.999rem // 32px
 $fontSize-4: 1.5rem // 24px
 $fontSize-5: 1.125rem // 18px for futura's small x-height
 $fontSize-6: 1rem // 16px
+$fontSize-7: 0.875rem // 14px for letter gothic's big size
 
 // font weight
 $fontWeight-primary-regular: 200
@@ -43,6 +44,9 @@ $letterSpacing-primary: 0.012em
     line-height: $baseline
   @else if $rank == 6
     font-size: $fontSize-6
+    line-height: $baseline
+  @else if $rank == 7
+    font-size: $fontSize-7
     line-height: $baseline
 
 h1, h2, p, h3, label, p
@@ -73,7 +77,8 @@ h3
 
 label
   font-family: $fontFamily-accent
-  @include typeScale(6)
+  @include typeScale(7)
+  font-weight: $fontWeight-accent-bold
 
 p
   @include typeScale(5)

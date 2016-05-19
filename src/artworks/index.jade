@@ -12,10 +12,11 @@ block description
     Creating art has been part of my life since I was a child. I discontinued when I was a teenager, because everyone told me I was good at math and I should become a scientist or engineer. In recent years, I rediscovered my passion and started to explore the space of art once again, with some new skills learned.
 
 block category-content
-  .category-content
+  .category-content.clearfix
     each project in site.data.artworks
       div.project
-        img(src= project.thumbnail, class='project-thumbnail')
-        h3
-          a(href= project.link, target= '_blank')= project.name
-        .project-label= project.label
+        a(href= project.link)
+          img(src= project.thumbnail, class='project-thumbnail')
+        h3.project-name
+          a(href= project.link)= project.name
+        label.project-label= project.label
