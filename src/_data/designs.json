@@ -1,7 +1,9 @@
 [{
-  "name": "Apropose",
-  "labels": "Product Design, Startup."
+  "name": "Yogurt",
+  "label": "Data Visualization Design.",
+  "thumbnail": "../../images/designs/yogurt.jpg",
+  "link": "/designs/yogurt"
 }, {
-  "name": "Synapp",
-  "labels": "Brand Identity, UX Design."
+  "name": "Journey",
+  "label": "Data Visualization Design."
 }]
