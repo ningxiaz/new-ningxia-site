@@ -4,5 +4,20 @@ block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
 
+include ../_modules/logo/logo
+include ../_modules/menu/menu
+
+//- Add extra stylesheets
+
 block content
-  p about page
+
+  //- Provides layout level markup
+  +logo('../')(class='logo')
+  +menu('about')(class='menu')
+
+  .row.row--top
+    .large-12.columns
+      h1 About Ningxia
+
+//- // Add extra scripts
+//- block append scripts

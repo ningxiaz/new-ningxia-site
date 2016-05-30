@@ -4,6 +4,11 @@ block config
   //- Correct base url pathing for this page
   - var baseUrl = '../'
 
+include ../_modules/menu/menu
+
+block menu
+  +menu('writings')(class='menu')
+
 block title
   h1 Writings
 

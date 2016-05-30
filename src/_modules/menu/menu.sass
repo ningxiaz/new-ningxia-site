@@ -58,7 +58,7 @@ $width--menuButton: 36px
   overflow: hidden
 
   &.open
-    opacity: .9
+    opacity: .95
     visibility: visible
     height: 100%
 
@@ -94,6 +94,31 @@ $width--menuButton: 36px
       text-decoration: none
       @include typeScale(1)
       font-weight: $fontWeight-primary-bold
+      font-style: italic
+      transition: all .25s ease
+      display: inline-block
+      position: relative
+
+      &:hover, &.is-active
+        transform: translateX(1.5rem)
+        opacity: 1
+
+      &::after
+        content: ' '
+        height: .2em
+        width: 0
+        top: 50%
+        left: -1.5rem
+        position: absolute
+        background-color: $color-accent
+        transition: all .5s ease
+        z-index: $zIndex-negative
+
+      &:hover::after, &.is-active::after
+        width: calc(100% + 3rem)
+
+
+
 
 
 

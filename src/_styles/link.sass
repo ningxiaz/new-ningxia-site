@@ -1,0 +1,23 @@
+// Link styles
+
+a.link--prominent
+  color: $color-grey-1
+  position: relative
+
+  &:before
+    content: ' '
+    position: absolute
+    bottom: .1em
+    height: .3em
+    background-color: $color-accent
+    width: 100%
+    left: 0
+    z-index: $zIndex-negative
+    transition: all .25s ease
+
+  &:hover:before
+    height: .6em
+
+  &:hover
+    opacity: 1
+

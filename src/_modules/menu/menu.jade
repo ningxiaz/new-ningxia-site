@@ -1,4 +1,4 @@
-mixin menu(spec)
+mixin menu(active, spec)
   - spec = spec || {}
   - spec.__class = spec.__class || ''
 
@@ -14,15 +14,15 @@ mixin menu(spec)
           nav
             ul
               li
-                a(href='/about') About
+                a(href='/about' class= active === 'about'? 'is-active': '') About
               li
-                a(href='/designs') Designs
+                a(href='/designs' class= active === 'designs'? 'is-active': '') Designs
               li
-                a(href='/artworks') Artworks
+                a(href='/artworks' class= active === 'artworks'? 'is-active': '') Artworks
               li
-                a(href='/coding') Coding
+                a(href='/coding' class= active === 'coding'? 'is-active': '') Coding
               li
-                a(href='/writings') Writings
+                a(href='/writings' class= active === 'writings'? 'is-active': '') Writings
               li
-                a(href='#') Music
+                a(href='#' class= active === 'music'? 'is-active': '') Music
 

@@ -1,9 +1,4 @@
 [{
-  "name": "Yogurt",
-  "label": "Data Visualization Design.",
-  "thumbnail": "../../images/designs/yogurt.jpg",
-  "link": "/designs/yogurt"
-}, {
   "name": "Synapp",
   "label": "Branding, UX Design, Illustration.",
   "thumbnail": "../../images/designs/synapp.jpg",
@@ -13,4 +8,9 @@
   "label": "Interaction Design, Behavioral Design.",
   "thumbnail": "../../images/designs/start.home.jpg",
   "link": "/designs/starthome"
+}, {
+  "name": "Yogurt",
+  "label": "Data Visualization Design.",
+  "thumbnail": "../../images/designs/yogurt.jpg",
+  "link": "/designs/yogurt"
 }]
