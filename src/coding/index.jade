@@ -1,0 +1,22 @@
+extends ../_layouts/category
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block title
+  h1 Coding
+
+block description
+  p.subtext.
+    One of my bachelor degrees and my master degree are in Computer Science. I'm not a machine learning expert or a Python ninja, but it thrills me to take on intellectual challenges and see things work.
+
+block category-content
+  .category-content.clearfix
+    each project in site.data.coding
+      div.project
+        a(href= project.link)
+          img(src= project.thumbnail, class='project-thumbnail')
+        h3.project-name
+          a(href= project.link)= project.name
+        label.project-label= project.label
