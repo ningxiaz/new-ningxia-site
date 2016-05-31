@@ -3,14 +3,6 @@
 $height--menuButton: 24px
 $width--menuButton: 36px
 
-@keyframes fadeInRight
-  0%
-    opacity: 0
-    left: 6%
-  100%
-    opacity: 1
-    left: 0
-
 .menu-button
   height: $height--menuButton
   width: $width--menuButton
@@ -82,6 +74,10 @@ $width--menuButton: 36px
       &:nth-of-type(6)
         animation-delay: .6s
 
+    .menu-contact
+      animation: fadeIn .5s ease forwards
+      animation-delay: .8s
+
   nav
     margin-top: 2*$baseline
     margin-bottom: $baseline
@@ -123,6 +119,7 @@ $width--menuButton: 36px
   display: inline-block
   margin-right: $baseline
   margin-bottom: $baseline
+  opacity: 0
 
   a
     font-weight: $fontWeight-primary-regular
@@ -133,4 +130,6 @@ $width--menuButton: 36px
 
     &:hover
       opacity: 1
+
+
 

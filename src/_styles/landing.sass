@@ -16,6 +16,9 @@
   background: url('../images/landing_bg.jpg') no-repeat center center
   background-size: cover
   z-index: $zIndex-negative
+  opacity: 0
+  animation: fadeIn 1s ease forwards
+  animation-delay: .3s
 
   @media #{$small-only}
     width: 100%
@@ -38,6 +41,9 @@
 .landing-text
   text-align: center
   padding: 6*$baseline $baseline
+  opacity: 0
+  animation: fadeInUp .3s ease-in-out forwards
+  animation-delay: 1s
 
 .landing-label
   @include typeScale(5)
