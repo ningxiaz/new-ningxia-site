@@ -61,6 +61,7 @@ $width--menuButton: 36px
     opacity: .95
     visibility: visible
     height: 100%
+    overflow-y: scroll
 
     li
       animation: fadeInRight .5s ease forwards
@@ -82,7 +83,8 @@ $width--menuButton: 36px
         animation-delay: .6s
 
   nav
-    margin: 3*$baseline 0
+    margin-top: 2*$baseline
+    margin-bottom: $baseline
 
   li
     display: block
@@ -117,9 +119,18 @@ $width--menuButton: 36px
       &:hover::after, &.is-active::after
         width: calc(100% + 3rem)
 
+.menu-contact
+  display: inline-block
+  margin-right: $baseline
+  margin-bottom: $baseline
 
+  a
+    font-weight: $fontWeight-primary-regular
+    color: $color-grey-1
+    color: $color-primary
+    margin-right: 0.5*$baseline
+    border-bottom: 1px $color-primary solid
 
-
-
-
+    &:hover
+      opacity: 1
 

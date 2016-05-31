@@ -35,6 +35,10 @@ body
   @include typeScale(5)
   font-weight: $fontWeight-primary-regular
 
+  // prevent background from scrolling when menu is open
+  &.has-menu-open
+    overflow-y: hidden
+
 .menu
   position: fixed
   top: $baseline
