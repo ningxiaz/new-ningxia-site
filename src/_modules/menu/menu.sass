@@ -1,7 +1,7 @@
 // menu styles
 
 $height--menuButton: 24px
-$width--menuButton: 36px
+$width--menuButton: 32px
 
 .menu-button
   height: $height--menuButton
@@ -10,6 +10,7 @@ $width--menuButton: 36px
   z-index: $zIndex--menuButton
   transition: opacity .25s ease
   position: relative
+  margin: 6px 0 // logo is 36px, to vertical align
 
   &:hover
     opacity: .7
@@ -24,7 +25,7 @@ $width--menuButton: 36px
 
   span
     background-color: $color-primary
-    height: 4px
+    height: 3px
     width: 100%
     position: absolute
     top: 0

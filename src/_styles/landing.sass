@@ -5,7 +5,7 @@
   text-align: center
   width: 100%
   margin-top: $baseline
-  line-height: $baseline // the same height as the menu button
+  line-height: 1.5 * $baseline // the same height as the logo
 
 .landing-image-half
   width: 50%
@@ -44,6 +44,9 @@
   opacity: 0
   animation: fadeInUp .3s ease-in-out forwards
   animation-delay: 1s
+
+  @media #{$small-only}
+    padding: 4*$baseline $baseline
 
 .landing-label
   @include typeScale(5)

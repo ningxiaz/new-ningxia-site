@@ -1,7 +1,7 @@
 extends _layouts/base
 
-include _modules/link/link
 include _modules/menu/menu
+include _modules/logo/logo
 
 block content
 
@@ -19,3 +19,4 @@ block content
       h1.landing-tagline #[a(class='link--prominent', href='/music') Music] Lover
 
   +menu(class='menu')
+  +logo('/')(class='logo')

@@ -42,12 +42,18 @@ body
 .menu
   position: fixed
   top: $baseline
-  right: 2*$baseline
+  right: 0.5*$baseline
+
+  @media #{$large-up}
+    right: 2*$baseline
 
 .logo
   position: fixed
   top: $baseline
-  left: 2*$baseline
+  left: 0.5*$baseline
+
+  @media #{$large-up}
+    left: 2*$baseline
 
 .row--top
   margin-top: 8*$baseline
