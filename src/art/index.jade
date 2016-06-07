@@ -7,18 +7,18 @@ block config
 include ../_modules/menu/menu
 
 block menu
-  +menu('coding')(class='menu')
+  +menu('art')(class='menu')
 
 block title
-  h1 Coding
+  h1 Art
 
 block description
   p.subtext.
-    One of my bachelor degrees and my master degree are in Computer Science. I'm not a machine learning expert or a Python ninja, but it thrills me to take on intellectual challenges and see things work.
+    Creating art has been part of my life since I was a child. I discontinued when I was a teenager, because everyone told me I was good at math and I should become a scientist or engineer. In recent years, I rediscovered my passion and started to explore the space of art once again, with some new skills learned.
 
 block category-content
   .category-content.clearfix
-    each project in site.data.coding
+    each project in site.data.artworks
       div.project
         a(href= project.link)
           img(src= project.thumbnail, class='project-thumbnail')
