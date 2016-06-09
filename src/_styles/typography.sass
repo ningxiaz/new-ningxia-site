@@ -33,7 +33,7 @@ $letterSpacing-2: 0.02em // for small font sizes
     line-height: 3*$baseline
   @else if $rank == 2
     font-size: $fontSize-2
-    line-height: 3*$baseline
+    line-height: 2*$baseline
   @else if $rank == 3
     font-size: $fontSize-3
     line-height: 1.5
@@ -60,7 +60,7 @@ h1
   margin-bottom: $baseline
 
 h2
-  @include typeScale(3)
+  @include typeScale(2)
   font-weight: $fontWeight-primary-bold
   letter-spacing: $letterSpacing-1
   margin-bottom: $baseline

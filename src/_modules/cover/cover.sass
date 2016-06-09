@@ -1,0 +1,17 @@
+// cover styles
+
+.cover
+  display: block
+  max-height: 20 * $baseline
+  max-width: 1800px
+  overflow: hidden
+  background-position: 50%
+  background-repeat: no-repeat
+  background-size: cover
+  margin: 0 auto
+
+.cover:before
+  content: " "
+  display: block
+  padding-bottom: 50% // 2:1 aspect ratio
+
