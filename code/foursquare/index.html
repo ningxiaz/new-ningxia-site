@@ -26,10 +26,10 @@
           <nav>
             <ul>
               <li><a href="/about">About</a></li>
-              <li><a href="/designs">Designs</a></li>
-              <li><a href="/artworks">Artworks</a></li>
-              <li><a href="/coding">Coding</a></li>
-              <li><a href="/writings">Writings</a></li>
+              <li><a href="/design">Design</a></li>
+              <li><a href="/art">Art</a></li>
+              <li><a href="/code">Code</a></li>
+              <li><a href="/writing">Writing</a></li>
               <li><a href="#">Music</a></li>
             </ul>
           </nav>
@@ -51,21 +51,17 @@
   </div>
   <div class="project-content">
     <div class="row">
-      <div class="large-10 medium-12 large-offset-1 columns"><h1>Rock 77</h1>
+      <div class="large-10 medium-12 large-offset-1 columns"><h1>Analysis of Foursquare Network</h1>
 
-<p><img alt="Rock 77" title="Rock 77" src="../../images/artworks/rock77-1.jpg"></p>
+<p>I’ve been a loyal Foursquare user since 2011. In <a href="http://web.stanford.edu/class/cs224w/">CS224W Social Network Analysis</a> taught by <a href="https://cs.stanford.edu/people/jure/">Prof. Jure Leskovec</a>, my project team was lucky to get our hands on a dataset from Foursquare, including information of venues and check-ins.</p>
 
-<p>Experience the live version here: <a href="http://ningxiaz.github.io/rock77/">http://ningxiaz.github.io/rock77/</a></p>
+<p>We investigated the interactions between venues in Foursquare network. Provided with the check-in number for each venue as well as the transitions between them, we studied the basic characteristics of the network, detected and analyzed community structures, and modeled the graph evolution with various techniques. Our work has strong application uses and potential business values, such as using community structures to recommend venues for users based on tastes, and to predict future popularity of venues, which can be essential for business owners.</p>
 
-<p>In the very beginning, the relationship between one’s past and present is the general direction I wanted to pursue. I often find it hard to reconcile between the past and present, since they’re so different, but they’re both part of me. I wonder if there’s a way to blend them together, making them at peace.</p>
+<p>In this project, I was mainly responsible of the community detection part. I applied Modified Girvan-Newman Algorithm, weighted CNM Algorithm that was adapted to this problem, and a Conductance-based Algorithm that was recently developed to detect overlapping communities. I used the Tableau software to visualize the results on the San Francisco map, and was surprised to find that the community map looks very similar to the racial segregation map. This might mean that people from certain cultures tend to be active around certain areas in San Francisco.</p>
 
-<p>Then I thought of the idea of a Chinese character collage of albums I listened to, since it has a cultural twist that resonates with me a lot. I grew up in China. I had never been abroad until I reached my twenties. But through music and art, I developed a keen interest in western alternative cultures. Now I live in the US, somehow I learned to appreciate my own culture more, and came to realize the cultural roots in me.</p>
+<p><img alt="Foursquare" title="Foursquare" src="../../images/coding/foursquare-1.jpg"></p>
 
-<p>In this work, I laid the album art in either the form of the Chinese characters (摇滚，meaning Rock ‘n’ Roll), or a timeline. In the Chinese character collage, one can flip through each album over and see a photo of me when I was listening to that album. In the timeline view, the albums form a timeline of their releases. The bottom timeline demonstrates the times when I listened to certain albums. One can see the mapping between two timelines through interactions.</p>
-
-<p><img alt="Rock 77" title="Rock 77" src="../../images/artworks/rock77-2.jpg"></p>
-
-<p><img alt="Rock 77" title="Rock 77" src="../../images/artworks/rock77-3.jpg"></p><a href="/artworks">← Back to my artworks</a>
+<p>To learn more about the project, please see the full paper: <a href="paper.pdf">Structural and Dynamic Analysis of Foursquare Network</a> and the <a href="poster.pdf">poster</a>.</p><a href="/coding">← Back to my coding</a>
       </div>
     </div>
   </div>

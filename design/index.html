@@ -10,14 +10,14 @@
   <title>Ningxia</title>
   <meta name="description" content="A new Yeogurt application">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="../../styles/main.css">
+  <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" type="text/css" href="//fast.fonts.net/cssapi/67330240-65d1-4421-80e1-1ed4d5553a91.css">
 </head>
 <body>
   <!--[if lt IE 9]>
   <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <div class="logo"><a href="/"><img src="../../images/logo.svg" class="logo-img"></a></div>
+  <div class="logo"><a href="/"><img src="../images/logo.svg" class="logo-img"></a></div>
   <div class="menu">
     <div class="menu-button"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
     <div class="menu-overlay">
@@ -26,10 +26,10 @@
           <nav>
             <ul>
               <li><a href="/about">About</a></li>
-              <li><a href="/designs">Designs</a></li>
-              <li><a href="/artworks">Artworks</a></li>
-              <li><a href="/coding">Coding</a></li>
-              <li><a href="/writings">Writings</a></li>
+              <li><a href="/design" class="is-active">Design</a></li>
+              <li><a href="/art">Art</a></li>
+              <li><a href="/code">Code</a></li>
+              <li><a href="/writing">Writing</a></li>
               <li><a href="#">Music</a></li>
             </ul>
           </nav>
@@ -49,13 +49,34 @@
       </div>
     </div>
   </div>
-  <div class="project-content">
-    <div class="row">
-      <div class="large-10 medium-12 large-offset-1 columns"><h2>Apropose</h2>
-
-<p>Some more descriptions about this project.</p><a href="/designs">← Back to my designs</a>
+  <div class="row row--top content--fadeIn">
+    <div class="large-4 columns">
+      <h1>Design</h1>
+    </div>
+    <div class="large-8 columns">
+      <p class="subtext">
+        With a mixed background of Software Engineering, Human-Computer Interaction and Design Thinking, I aspire to design and build experiences that are useful, pleasant and meaningful.
+        
+      </p>
+    </div>
+  </div>
+  <div class="row content--fadeIn">
+    <div class="large-12 columns">
+      <div class="category-content clearfix">
+        <div class="project"><a href="/designs/synapp"><img src="../../images/designs/synapp.jpg" class="project-thumbnail"></a>
+          <h3 class="project-name"><a href="/designs/synapp">Synapp</a></h3>
+          <label class="project-label">Branding, UX Design, Illustration.</label>
+        </div>
+        <div class="project"><a href="/designs/starthome"><img src="../../images/designs/start.home.jpg" class="project-thumbnail"></a>
+          <h3 class="project-name"><a href="/designs/starthome">Start.Home</a></h3>
+          <label class="project-label">Interaction Design, Behavioral Design.</label>
+        </div>
+        <div class="project"><a href="/designs/yogurt"><img src="../../images/designs/yogurt.jpg" class="project-thumbnail"></a>
+          <h3 class="project-name"><a href="/designs/yogurt">Yogurt</a></h3>
+          <label class="project-label">Data Visualization Design.</label>
+        </div>
       </div>
     </div>
   </div>
-  <script src="../../scripts/main.js"></script>
+  <script src="../scripts/main.js"></script>
 </body></html>
