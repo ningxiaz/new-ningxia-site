@@ -1,0 +1,11 @@
+[{
+  "name": "Phishing Detection",
+  "label": "Machine Learning.",
+  "thumbnail": "../../images/code/phishing.jpg",
+  "link": "/code/phishing"
+}, {
+  "name": "Analysis of Foursquare Network",
+  "label": "Social Network Analysis.",
+  "thumbnail": "../../images/code/foursquare.jpg",
+  "link": "/code/foursquare"
+}]

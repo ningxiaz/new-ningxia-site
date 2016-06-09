@@ -1,0 +1,26 @@
+[{
+  "name": "Many Worlds",
+  "label": "Concept, Installation.",
+  "thumbnail": "../../images/art/many_worlds.jpg",
+  "link": "/art/many-worlds"
+}, {
+  "name": "Voices",
+  "label": "Short Film.",
+  "thumbnail": "../../images/art/voices.jpg",
+  "link": "/art/voices"
+}, {
+  "name": "Time Whispers",
+  "label": "Concept.",
+  "thumbnail": "../../images/art/time_whispers.jpg",
+  "link": "/art/time-whispers"
+}, {
+  "name": "Rock 77",
+  "label": "Web, Interactive.",
+  "thumbnail": "../../images/art/rock77.jpg",
+  "link": "/art/rock77"
+}, {
+  "name": "Missing Flight",
+  "label": "Concept.",
+  "thumbnail": "../../images/art/missing_flight.jpg",
+  "link": "/art/missing-flight"
+}]
