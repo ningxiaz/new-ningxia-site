@@ -1,6 +1,6 @@
 # Voices
 
-![Voices](../../images/artworks/voices-1.jpg "Voices")
+![Voices](../../images/art/voices-1.jpg "Voices")
 
 Full video: [https://vimeo.com/ningxia/voices](https://vimeo.com/ningxia/voices)
 

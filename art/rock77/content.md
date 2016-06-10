@@ -1,6 +1,6 @@
 # Rock 77
 
-![Rock 77](../../images/artworks/rock77-1.jpg "Rock 77")
+![Rock 77](../../images/art/rock77-1.jpg "Rock 77")
 
 Experience the live version here: [http://ningxiaz.github.io/rock77/](http://ningxiaz.github.io/rock77/)
 
@@ -10,8 +10,8 @@ Then I thought of the idea of a Chinese character collage of albums I listened t
 
 In this work, I laid the album art in either the form of the Chinese characters (摇滚，meaning Rock ‘n’ Roll), or a timeline. In the Chinese character collage, one can flip through each album over and see a photo of me when I was listening to that album. In the timeline view, the albums form a timeline of their releases. The bottom timeline demonstrates the times when I listened to certain albums. One can see the mapping between two timelines through interactions.
 
-![Rock 77](../../images/artworks/rock77-2.jpg "Rock 77")
+![Rock 77](../../images/art/rock77-2.jpg "Rock 77")
 
-![Rock 77](../../images/artworks/rock77-3.jpg "Rock 77")
+![Rock 77](../../images/art/rock77-3.jpg "Rock 77")
 
 
