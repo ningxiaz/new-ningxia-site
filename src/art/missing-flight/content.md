@@ -1,6 +1,6 @@
 # Missing Flight
 
-![Missing Flight](../../images/artworks/missing_flight-1.jpg "Missing Flight")
+![Missing Flight](../../images/art/missing_flight-1.jpg "Missing Flight")
 
 The complete series can be found here: [http://missingflight.tumblr.com/](http://missingflight.tumblr.com/)
 

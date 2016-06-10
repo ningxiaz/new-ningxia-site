@@ -2,7 +2,7 @@
 
 ### A Chrome extension that helps you understand your browsing behavior and reduce distraction.
 
-![Yogurt](../../images/designs/yogurt-1.jpg "Yogurt")
+![Yogurt](../../images/design/yogurt-1.jpg "Yogurt")
 
 ## Motivation
 
@@ -20,13 +20,13 @@ More specifically in this project, each row represents the time period of one da
 
 To help the user further understand her browsing behavior, we added daily and weekly aggregated statistics on a collapsible side pane, including a ranked list of domains sorted by visiting frequency and duration.
 
-![Yogurt](../../images/designs/yogurt-2.jpg "Yogurt")
+![Yogurt](../../images/design/yogurt-2.jpg "Yogurt")
 
 With interaction technique similar to Brushing and Linking, we were able to let the user explore and discover more from the data. When the user hovers a particular stripe, not only she can see more details about that visit, but all other visits of the same domain within the past seven days will also be highlighted. The same will happen when the user hovers a domain from the ranked list.
 
 Apart from the fragmented nature, DNA art also inspired us by being highly personal. In a way, our browsing behavior is also very personal and unique to us. To add a personal touch, the user can choose from a number of color themes and export the visualization as a desktop wallpaper.
 
-![Yogurt](../../images/designs/yogurt-3.jpg "Yogurt")
+![Yogurt](../../images/design/yogurt-3.jpg "Yogurt")
 
 ## Implementation
 

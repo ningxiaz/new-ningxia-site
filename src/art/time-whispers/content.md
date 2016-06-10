@@ -1,6 +1,6 @@
 # Time Whispers
 
-![Time Whispers](../../images/artworks/time_whispers-1.jpg "Time Whispers")
+![Time Whispers](../../images/art/time_whispers-1.jpg "Time Whispers")
 
 See the full project here: [http://timewhispers.tumblr.com/](http://timewhispers.tumblr.com/)
 
