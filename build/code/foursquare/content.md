@@ -6,6 +6,6 @@ We investigated the interactions between venues in Foursquare network. Provided 
 
 In this project, I was mainly responsible of the community detection part. I applied Modified Girvan-Newman Algorithm, weighted CNM Algorithm that was adapted to this problem, and a Conductance-based Algorithm that was recently developed to detect overlapping communities. I used the Tableau software to visualize the results on the San Francisco map, and was surprised to find that the community map looks very similar to the racial segregation map. This might mean that people from certain cultures tend to be active around certain areas in San Francisco.
 
-![Foursquare](../../images/coding/foursquare-1.jpg "Foursquare")
+![Foursquare](../../images/code/foursquare-1.jpg "Foursquare")
 
 To learn more about the project, please see the full paper: [Structural and Dynamic Analysis of Foursquare Network](paper.pdf) and the [poster](poster.pdf).

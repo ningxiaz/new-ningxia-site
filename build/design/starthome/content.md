@@ -2,7 +2,7 @@
 
 ### An app that integrates into a solar house to guide homeowners toward a more sustainable lifestyle.
 
-![Start.Home](../../images/designs/start.home-1.jpg "Start.Home")
+![Start.Home](../../images/design/start.home-1.jpg "Start.Home")
 
 
 ## Background
@@ -25,17 +25,17 @@ So the main components of the design are the ambient view, past data exploration
 
 We started with the ambient visualization design. We wanted it to look organic, artistic, and visually pleasing, while also being informative and easy to parse. In some of the explorations, we used clock on the wall as a metaphor and mapped the visualization in a ring shape. We imagined that with a tap, the ring could unwind into a linear, detailed graph, which could be a smooth transition from the ambient view to the past data exploration view.
 
-![Start.Home](../../images/designs/start.home-2.jpg "Start.Home")
+![Start.Home](../../images/design/start.home-2.jpg "Start.Home")
 
 For the past data view, the goal was to make it easy to explore the data at different levels of granularity, surface usage patterns, anomalies and improvement opportunities. The past data is also closely related to future projections and goal setting, thus we explored different ways to tie them together. The goal setting logic was one of the biggest challenge in this project. I worked with [Jason Bade](https://changelabs.stanford.edu/people/jason-bade), our consultant in behavioral science to brainstorm ideas, and evaluate different options from a theoretical standpoint. Decisions like whether there should be a default goal, if yes how the default goal should be defined, how the app should communicate when the goal is achieved or missed, when the goal should be adjusted, how we can make suggestions to help homeowners stay on their goal, took us a lot of time and discussions to reason through.
 
-![Start.Home](../../images/designs/start.home-3.jpg "Start.Home")
+![Start.Home](../../images/design/start.home-3.jpg "Start.Home")
 
 The controls were exposed both as convenient short cuts, and actions to take in goal setting. We incorporated the floor plan into the interface, so that the homeowner knows exactly which part of the house she’s controlling — an application of the [Mapping](https://en.wikipedia.org/wiki/Natural_mapping_(interface_design)) principle.
 
 Here are the sketches of the overall design of the app:
 
-![Start.Home](../../images/designs/start.home-4.jpg "Start.Home")
+![Start.Home](../../images/design/start.home-4.jpg "Start.Home")
 
 ## Execution
 
@@ -43,7 +43,7 @@ In the spring quarter, I collaborated with the then Computer Science Team lead [
 
 In fall 2013, we took our Start.Home to Irvine, California to compete in the real competition. We scored top five in the six evaluation categories, despite being a first-time contestant.
 
-![Start.Home](../../images/designs/start.home-5.jpg "Start.Home")
+![Start.Home](../../images/design/start.home-5.jpg "Start.Home")
 
 ## Reflection
 
