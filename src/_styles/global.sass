@@ -58,4 +58,10 @@ body
 .row--top
   margin-top: 8*$baseline
 
+.columns
+  @media #{$small-only}
+    // the gutter space is 0.5 * $baseline
+    // increase the bleeding to $baseline on mobile
+    padding-left: $baseline
+    padding-right: $baseline
 
