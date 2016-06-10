@@ -31,9 +31,11 @@ For the past data view, the goal was to make it easy to explore the data at diff
 
 ![Start.Home](../../images/design/start.home-3.jpg "Start.Home")
 
+We eventually chose the tile graph to visualize the past data. Prom prototyping, we found it most effective in presenting an overview of performance, surfacing patterns and anomalies, and most glanceable from a distance.
+
 The controls were exposed both as convenient short cuts, and actions to take in goal setting. We incorporated the floor plan into the interface, so that the homeowner knows exactly which part of the house she’s controlling — an application of the [Mapping](https://en.wikipedia.org/wiki/Natural_mapping_(interface_design)) principle.
 
-Here are the sketches of the overall design of the app:
+Here are my sketches of the overall design of the app, and how each component interacts with others:
 
 ![Start.Home](../../images/design/start.home-4.jpg "Start.Home")
 
@@ -49,7 +51,7 @@ In fall 2013, we took our Start.Home to Irvine, California to compete in the rea
 
 This was one of the largest and most challenging projects I did at Stanford. The topic was cutting edge. The needs were not obvious. The design should not only assist, inform but also help shift behavior. The effort was highly collaborative, with multiple teams involved. The exploration space was quite large, but the resources were very constrained. I was doing it on the side while being a full-time student and full-time intern during the summer, so were other team members. It was my first time managing a months-long project, and I had to make sure it could be completed by the time the competition started.
 
-Looking back, I wouldn’t say I’ve done a fantastic job. In the beginning, we were so excited about the topic that we spent a long time exploring and brainstorming interesting ideas. Meanwhile, it was difficult to get everyone to agree on one design. We could have gathered more feedback and moved on to the next iteration much faster. In the end we didn’t have enough time to implement a lot of the fancy ideas we aspired to do. We also could have started prototyping the integration with the embedded systems earlier. At the time it was hard to align our timelines, so the integration happened pretty near the deadline, and we had to fix a lot of unexpected problems in a rush.
+Looking back, I wouldn’t say I’ve done a fantastic job. In the beginning, we were so excited about the topic that we spent a long time exploring and brainstorming interesting ideas. Meanwhile, it was difficult to get everyone to agree on one design. We could have gathered more feedback and moved on to the next iteration much faster. In the end we didn’t have enough time to implement a lot of the fancy ideas we aspired to do. We also could have started prototyping the integration with the embedded systems earlier. At the time it was hard to align our timelines, so the integration happened very close to the deadline, and we had to fix a lot of unexpected problems in a rush.
 
 
 
