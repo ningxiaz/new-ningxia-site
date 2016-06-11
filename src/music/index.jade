@@ -1,0 +1,18 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+include ../_modules/logo/logo
+include ../_modules/menu/menu
+include ../_modules/cover/cover
+
+//- Add extra stylesheets
+
+block content
+
+  +cover('../images/music.jpg')(class='music-cover content--fadeIn')
+
+  +logo('../')(class='logo')
+  +menu('music')(class='menu')
