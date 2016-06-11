@@ -7,9 +7,6 @@ include ../_modules/logo/logo
 block content
 
   //- Provides layout level markup
-  +logo('../')(class='logo')
-  block menu
-
   .row.row--top.content--fadeIn
     .large-4.columns
       block title
@@ -20,6 +17,9 @@ block content
   .row.content--fadeIn
     .large-12.columns
       block category-content
+
+  +logo('../')(class='logo')
+  block menu
 
 //- // Add extra scripts
 //- block append scripts
