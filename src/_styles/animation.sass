@@ -22,6 +22,15 @@
     opacity: 1
     transform: none
 
+// after fading in up, also vertically center the object
+@keyframes fadeInUpVerticalCenter
+  0%
+    opacity: 0
+    transform: translateY(-45%)
+  100%
+    opacity: 1
+    transform: translateY(-50%)
+
 .content--fadeIn
   animation: fadeIn 1s ease
 

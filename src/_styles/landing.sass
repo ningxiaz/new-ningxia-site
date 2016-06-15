@@ -38,15 +38,25 @@
     width: 100%
     position: static
 
+  @media #{$medium-up}
+    transform-style: preserve-3d
+    height: 100%
+
 .landing-text
   text-align: center
-  padding: 6*$baseline $baseline
+  padding: 0 $baseline
   opacity: 0
-  animation: fadeInUp .3s ease-in-out forwards
-  animation-delay: 1s
 
   @media #{$small-only}
+    animation: fadeInUp .3s ease-in-out forwards
+    animation-delay: 1s
     padding: 4*$baseline $baseline
+
+  @media #{$medium-up}
+    animation: fadeInUpVerticalCenter .3s ease-in-out forwards
+    animation-delay: 1s
+    position: relative
+    top: 50%
 
 .landing-label
   @include typeScale(5)
