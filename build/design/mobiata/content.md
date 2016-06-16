@@ -6,7 +6,7 @@
 
 ## Background
 
-Mobiata, a startup acquired by Expedia, creates beautifully and thoughtfully designed mobile applications that help people travel smart. Their flagship apps, FlightTrack and Expedia, have received a number of accolades from the design community. In the summer of 2013, I was lucky enough to intern at Mobiata’s San Francisco office as a Mobile Designer.
+[Mobiata](https://www.mobiata.com/), a startup acquired by Expedia, creates beautifully and thoughtfully designed mobile applications that help people travel smart. Their flagship apps, FlightTrack and Expedia, have received a number of accolades from the design community. In the summer of 2013, I was lucky to intern at Mobiata’s San Francisco office as a Mobile Designer.
 
 ## UX & Visual
 
