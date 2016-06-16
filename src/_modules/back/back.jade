@@ -1,0 +1,8 @@
+mixin back(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.url = spec.url || '/'
+
+  div(class=spec.__class)&attributes(attributes)
+    a(href=spec.url)
+      img(src= baseUrl + 'images/arrow.svg', class='back-img')

@@ -1,5 +1,7 @@
 extends ../../_layouts/project
 
+include ../../_modules/back/back
+
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../../'
@@ -9,4 +11,5 @@ block project-content
     .row
       .large-10.medium-12.large-offset-1.columns
         include:markdown content.md
-        a(href='/code') ← Back to my code
+
+  +back({url: '/code'})(class='back')
