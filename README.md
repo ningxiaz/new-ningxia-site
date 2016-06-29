@@ -1,12 +1,11 @@
-# Ningxia readme
+# Ningxia's Personal Site
 
 Generated on 2016-04-29 using
 [generator-yeogurt@1.5.2](https://github.com/larsonjj/generator-yeogurt)
 
 ## Description
 
-This is an example readme file.
-Describe your site/app here.
+This is Ningxia's current personal site, including design portfolio, art projects, writings and bio.
 
 ## Technologies used
 
