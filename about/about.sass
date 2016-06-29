@@ -9,11 +9,20 @@
 
 .about-section--bg
   position: relative
-  background-color: $color-light-bg
 
-  h2
-    position: relative
-    z-index: $zIndex-1
+  // this is to make sure the background color is beneath the link underline
+  &:after
+    content: ' '
+    position: absolute
+    background-color: $color-light-bg
+    width: 100%
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    display: block
+    // to make it underneath the link underline, which has z-index -1
+    z-index: 10 * $zIndex-negative
 
 .about-contact
   margin-top: $baseline
