@@ -1,6 +1,6 @@
 # Synapp
 
-### A platform that enables communication and decision-making in a crowd.
+#### A platform that enables communication and decision-making in a crowd.
 
 ![Synapp](../../images/design/synapp-1.jpg "Synapp")
 

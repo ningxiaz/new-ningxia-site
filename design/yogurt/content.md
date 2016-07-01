@@ -1,6 +1,6 @@
 # Yogurt
 
-### A Chrome extension that helps you understand your browsing behavior and reduce distraction.
+#### A Chrome extension that helps you understand your browsing behavior and reduce distraction.
 
 ![Yogurt](../../images/design/yogurt-1.jpg "Yogurt")
 
