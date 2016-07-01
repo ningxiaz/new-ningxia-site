@@ -1,3 +1,6 @@
+### 6/30/2016
+- More project details to Apropose
+
 ### 6/28/2016
 - Improve content on About page
 
