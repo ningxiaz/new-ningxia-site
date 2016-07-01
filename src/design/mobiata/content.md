@@ -1,6 +1,6 @@
 # Mobiata
 
-### Crafting beautiful, thoughtful mobile apps that help people travel smart.
+#### Crafting beautiful, thoughtful mobile apps that help people travel smart.
 
 ![Mobiata](../../images/design/mobiata-1.jpg "Mobiata")
 

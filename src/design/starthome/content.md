@@ -1,6 +1,6 @@
 # Start.Home
 
-### An app that integrates into a solar house to guide homeowners toward a more sustainable lifestyle.
+#### An app that integrates into a solar house to guide homeowners toward a more sustainable lifestyle.
 
 ![Start.Home](../../images/design/start.home-1.jpg "Start.Home")
 
