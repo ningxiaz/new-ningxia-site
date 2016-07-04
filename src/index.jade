@@ -7,16 +7,19 @@ block content
 
   h3.landing-name NINGXIA ZHANG
 
-  .landing-image-half
+  .landing-image-half.landing-image--portrait
+  .landing-image-half.landing-image--design
+  .landing-image-half.landing-image--art
+  .landing-image-half.landing-image--music
 
   .landing-text-half
     .landing-text
       label.landing-label Full-time
-      h1.landing-tagline Product #[a(class='link--prominent', href='/design') Design]er
+      h1.landing-tagline Product #[a(class='link--prominent landing-link--design', href='/design') Design]er
       label.landing-label Sometimes
-      h1.landing-tagline #[a(class='link--prominent', href='/art') Art] Explorer
+      h1.landing-tagline #[a(class='link--prominent landing-link--art', href='/art') Art] Explorer
       label.landing-label Always
-      h1.landing-tagline #[a(class='link--prominent', href='/music') Music] Lover
+      h1.landing-tagline #[a(class='link--prominent landing-link--music', href='/music') Music] Lover
 
   +logo('/')(class='logo')
   +menu(class='menu')

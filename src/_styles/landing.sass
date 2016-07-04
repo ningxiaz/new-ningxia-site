@@ -13,18 +13,36 @@
   top: 0
   bottom: 0
   left: 0
-  background: url('../images/landing_bg.jpg') no-repeat center center
-  background-size: cover
   z-index: $zIndex-negative
   opacity: 0
-  animation: fadeIn 1s ease forwards
-  animation-delay: .3s
+  transition: opacity .3s ease
+
+  &.is-shown
+    opacity: 1
 
   @media #{$small-only}
     width: 100%
     bottom: auto
     min-height: 400px
     position: static
+
+.landing-image--portrait
+  background: url('../images/landing_bg.jpg') no-repeat center center
+  background-size: cover
+  animation: fadeIn 1s ease forwards
+  animation-delay: .3s
+
+.landing-image--design
+  background: url('../images/landing_design_bg.jpg') no-repeat center center
+  background-size: cover
+
+.landing-image--art
+  background: url('../images/landing_art_bg.jpg') no-repeat center center
+  background-size: cover
+
+.landing-image--music
+  background: url('../images/landing_music_bg.jpg') no-repeat center center
+  background-size: cover
 
 .landing-text-half
   width: 50%
