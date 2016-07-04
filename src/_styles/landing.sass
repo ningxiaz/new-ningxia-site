@@ -21,10 +21,7 @@
     opacity: 1
 
   @media #{$small-only}
-    width: 100%
-    bottom: auto
-    min-height: 400px
-    position: static
+    display: none
 
 .landing-image--portrait
   background: url('../images/landing_bg.jpg') no-repeat center center
@@ -67,8 +64,8 @@
 
   @media #{$small-only}
     animation: fadeInUp .3s ease-in-out forwards
-    animation-delay: 1s
-    padding: 4*$baseline $baseline
+    animation-delay: .5s
+    padding: 3*$baseline $baseline
 
   @media #{$medium-up}
     animation: fadeInUpVerticalCenter .3s ease-in-out forwards
@@ -80,4 +77,32 @@
   @include typeScale(5)
   margin-bottom: 2*$baseline
   font-weight: $fontWeight-accent-bold
+
+// mobile sections
+.landing-mobile-section
+  // very similar to cover image module
+  // can consider a more general module
+  display: block
+  max-height: 20 * $baseline
+  max-width: 1800px
+  overflow: hidden
+  background-position: 50%
+  background-repeat: no-repeat
+  background-size: cover
+  margin: 0 auto
+  position: relative
+
+  &:before
+    content: " "
+    display: block
+    padding-bottom: 75% // 4:3 aspect ratio
+
+  h3
+    position: absolute
+    bottom: 0.5*$baseline
+    left: $baseline
+    color: $color-grey-1
+
+  @media #{$medium-up}
+    display: none
 
