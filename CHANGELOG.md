@@ -1,3 +1,9 @@
+### 7/4/2016
+- Add more interactions on desktop landing page, faster to peek content
+- Change layout on mobile landing page, easier to enter category pages
+- Speed up menu animation
+- Add footer
+
 ### 6/30/2016
 - More project details to Apropose
 
