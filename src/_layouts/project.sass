@@ -29,3 +29,34 @@
 
   img
     margin: $baseline 0
+
+// Fluidbox enabled image gallery
+.project-gallery
+  width: 100%
+  @extend .clearfix
+
+  // image with caption
+  img
+    margin-bottom: 0.5*$baseline
+
+  .image-caption
+    color: $color-grey-3
+    display: block
+    text-align: center
+    margin-bottom: $baseline
+
+.project-grid-2
+  width: 100%
+  display: inline-block
+
+  @media #{$medium-up}
+    width: 50%
+    float: left
+
+    &:nth-child(2n+1)
+      padding-right: 0.5*$baseline
+
+    &:nth-child(2n)
+      padding-left: 0.5*$baseline
+
+
