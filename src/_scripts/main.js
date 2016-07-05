@@ -4,10 +4,15 @@
 'use strict';
 
 var $ = require('jquery');
+require('fluidbox');
+
 var Menu = require('../_modules/menu/menu');
 
 $(function() {
   new Menu(); // Activate Menu modules logic
+
+  // activate Fluidbox
+  $('.fluidbox').fluidbox();
 
   // Landing page interactions
   $('.landing-link--design').hover(function() {
