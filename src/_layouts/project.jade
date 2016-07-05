@@ -1,5 +1,6 @@
 extend ./base
 
+include ../_modules/footer/footer
 include ../_modules/menu/menu
 
 //- // Add extra stylesheets
@@ -11,6 +12,7 @@ block content
 
   block project-content
 
+  +footer
   +menu(class='menu')
 
 //- // Add extra scripts

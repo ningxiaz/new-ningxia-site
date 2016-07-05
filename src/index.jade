@@ -2,6 +2,7 @@ extends _layouts/base
 
 include _modules/menu/menu
 include _modules/logo/logo
+include _modules/footer/footer
 
 block content
 
@@ -32,6 +33,8 @@ block content
   a(href='/art')
     .landing-mobile-section.content--fadeIn(style='background-image: url(images/landing_art_bg.jpg)')
       h3 → Art
+
+  +footer(class='landing-footer')
 
   +logo('/')(class='logo')
   +menu(class='menu')
