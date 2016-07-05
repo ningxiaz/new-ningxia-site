@@ -1,3 +1,7 @@
+### 7/5/2016
+- Add [Fluidbox](http://terrymun.github.io/Fluidbox/demo/index.html) to create lightbox effects on project pages
+- Change groups of images on Apropose project to lightboxes
+
 ### 7/4/2016
 - Add more interactions on desktop landing page, faster to peek content
 - Change layout on mobile landing page, easier to enter category pages
