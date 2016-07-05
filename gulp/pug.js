@@ -3,7 +3,7 @@
 var fs = require('fs');
 var path = require('path');
 var foldero = require('foldero');
-var jade = require('jade');
+var pug = require('pug');
 var yaml = require('js-yaml');
 
 module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) {
@@ -11,8 +11,8 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
   var dest = path.join(taskTarget);
   var dataPath = path.join(dirs.source, dirs.data);
 
-  // Jade template compile
-  gulp.task('jade', function() {
+  // pug template compile
+  gulp.task('pug', function() {
     var siteData = {};
     if (fs.existsSync(dataPath)) {
       // Convert directory to JS Object
@@ -49,13 +49,13 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
     }
 
     return gulp.src([
-      path.join(dirs.source, '**/*.jade'),
+      path.join(dirs.source, '**/*.pug'),
       '!' + path.join(dirs.source, '{**/\_*,**/\_*/**}')
     ])
     .pipe(plugins.changed(dest))
     .pipe(plugins.plumber())
-    .pipe(plugins.jade({
-      jade: jade,
+    .pipe(plugins.pug({
+      pug: pug,
       pretty: true,
       locals: {
         config: config,

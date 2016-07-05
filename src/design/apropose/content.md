@@ -36,6 +36,14 @@ The first prototype we built employed a bunch of fly-out menus. Each menu repres
 
 ![Apropose](../../images/design/apropose-2.jpg "Apropose")
 
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
+
+hellohello
+
 After some more exploration, I decided to try adapting a more natural search interaction. People are familiar with search box and typeahead. As a user types, we can suggest possible terms of different types, and the user can confirm the type of the term by selecting from the dropdown. Similar interactions can be found in LinkedIn and Spotify where a search is performed on all types of entities. Another key difference is the ability to combine terms of different types, which further adds to the complexity. One possible interaction is that, a user types and then selects to confirm the type, and then types another and selects again. We called it structured typeahead.
 
 We prototyped this interaction and put it in front of people. Although people felt familiar with the search box, they didn’t know what could be searched, what couldn’t, and they were confused by the new typeahead behavior. The empty search box promised a lot more than what the technology could support. Some people typed “onboarding”, which is a much more complex UX feature that was not available. Some people typed "blue software” and hit enter, but we expected them to tell us “blue” is a color, “software” is an industry. We were obviously facing technical constraints. Each design pattern feature is a machine learning problem. Some of the types were a slowly growing finite set. We could have built some basic mechanism to automatically identify the types. But the smarter the software tries to be, the harder it is to get it right and lives up to the expectations.

@@ -2,9 +2,11 @@
   "name": "ningxia",
   "version": "0.0.1",
   "dependencies": {
+    "gulp-pug": "^3.0.3",
     "jquery": "~2.2.0",
     "jstransformer-markdown": "^1.1.0",
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "pug": "^2.0.0-beta3"
   },
   "devDependencies": {
     "lodash": "~4.0.0",
