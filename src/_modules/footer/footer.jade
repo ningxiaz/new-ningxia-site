@@ -1,0 +1,15 @@
+mixin footer(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  div(class=spec.__class)&attributes(attributes)
+    footer
+      .row.content--fadeIn
+        .large-12.columns.clearfix.footer-content
+          .footer-contact
+            label Say Hi:
+            a(href='mailto:ningxia.z@gmail.com') ningxia.z@gmail.com
+
+          .footer-copyright
+            p.
+              2016 © Ningxia Zhang

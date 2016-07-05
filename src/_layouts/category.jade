@@ -1,6 +1,7 @@
 extend ./base
 
 include ../_modules/logo/logo
+include ../_modules/footer/footer
 
 //- Add extra stylesheets
 
@@ -17,6 +18,8 @@ block content
   .row.content--fadeIn
     .large-12.columns
       block category-content
+
+  +footer
 
   +logo('../')(class='logo')
   block menu
