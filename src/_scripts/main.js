@@ -4,7 +4,7 @@
 'use strict';
 
 var $ = require('jquery');
-require('jquery.fluidbox.min');
+require('fluidbox');
 
 var Menu = require('../_modules/menu/menu');
 

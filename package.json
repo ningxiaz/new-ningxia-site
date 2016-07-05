@@ -2,9 +2,11 @@
   "name": "ningxia",
   "version": "0.0.1",
   "dependencies": {
+    "fluidbox": "^2.0.0",
     "jquery": "~2.2.0",
     "jstransformer-markdown": "^1.1.0",
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "throttle-debounce": "^1.0.1"
   },
   "devDependencies": {
     "lodash": "~4.0.0",
