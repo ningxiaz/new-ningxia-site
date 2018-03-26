@@ -1,3 +1,6 @@
+### 3/25/2018
+- Updated information
+
 ### 7/5/2016
 - Add [Fluidbox](http://terrymun.github.io/Fluidbox/demo/index.html) to create lightbox effects on project pages
 - Change groups of images on Apropose project to lightboxes
