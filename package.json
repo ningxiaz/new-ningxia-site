@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "dependencies": {
     "fluidbox": "^2.0.0",
-    "jquery": "~3.0.0",
+    "jquery": ">=3.4.0",
     "jstransformer-markdown": "^1.1.0",
     "normalize.css": "~3.0.3",
     "throttle-debounce": "^1.0.1"
   },
   "devDependencies": {
-    "lodash": "~4.0.0",
+    "lodash": ">=4.17.12",
     "foldero": "~0.1.1",
     "minimist": "~1.2.0",
     "rimraf": "~2.5.0",
@@ -42,7 +42,7 @@
     "gulp-eslint": "~1.1.1",
     "gulp-sass": "~2.1.1",
     "gulp-newer": "~1.1.0",
-    "js-yaml": "~3.5.2",
+    "js-yaml": ">=3.13.1",
     "watchify": "~3.7.0 ",
     "browserify": "~13.0.0"
   },
