@@ -1,24 +1,21 @@
 [{
+  "name": "Brand Equity Polling",
+  "label": "Mobile, Facebook.",
+  "thumbnail": "../../images/design/brand.jpg",
+  "link": "/design/brand"
+}, {
   "name": "Apropose",
   "label": "Product, Branding, Startup.",
   "thumbnail": "../../images/design/apropose.jpg",
   "link": "/design/apropose"
-}, {
-  "name": "Synapp",
-  "label": "Branding, UX Design, Illustration.",
-  "thumbnail": "../../images/design/synapp.jpg",
-  "link": "/design/synapp"
-}, {
+},
+{
   "name": "Mobiata",
   "label": "UX Design, Visual Design, Product Concept.",
   "thumbnail": "../../images/design/mobiata.jpg",
   "link": "/design/mobiata"
-}, {
-  "name": "Start.Home",
-  "label": "Interaction Design, Behavioral Design.",
-  "thumbnail": "../../images/design/start.home.jpg",
-  "link": "/design/starthome"
-}, {
+},
+{
   "name": "Yogurt",
   "label": "Data Visualization Design.",
   "thumbnail": "../../images/design/yogurt.jpg",
