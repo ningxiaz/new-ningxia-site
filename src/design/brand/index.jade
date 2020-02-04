@@ -17,7 +17,7 @@ block project-content
           Capture more brand sentiment signals with novel polling units.
 
     .row
-      .large-6.columns
+      .large-7.columns.summary
         p.
           It’s hard for brand advertisers to measure the effectiveness of their brand advertisements on Facebook. The plain polling formats we offered in News Feed were not effective in capturing emotional response or subtle attitude changes.
         p.
@@ -26,7 +26,7 @@ block project-content
           From the data analysis after the campaign, we learned that the new formats agreed with comparable standard formats directionally and appeared to produce greater signal.
 
 
-      .large-6.columns
+      .large-5.columns
         video(src='brand-final-1.mp4', type='video/mp4', autoplay='true', loop='true')
           p.
             Your browser does not support the video element.
@@ -65,7 +65,17 @@ block project-content
           ### Explore
           Suggested by our UX Researcher with a PhD in social psychology, we planned to use a common method to measure connection in social science research. In this method, participant is asked to select the visual representation of two circles that most accurately describes the connection they have to a certain concept.
 
-          I then explored some UI concepts and used them to help answer some open questions, such as whether we would want to measure connection to competitors or not. By reviewing these concepts with PMM, DS and UX Researcher, we effectively narrowed our solution to:
+          See academic paper: [Ingroup Identification as the Inclusion of Ingroup in the Self - Linda R. Tropp, Stephen C. Wright, 2001](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.621.219&rep=rep1&type=pdf).
+
+          I then explored some UI concepts and used them to help answer some open questions, such as whether we would want to measure connection to competitors or not.
+
+        .project-gallery
+          a.fluidbox(href='../../images/design/brand-2.png')
+              img(src='../../images/design/brand-2.png', alt='', title='')
+            label.image-caption Initial exploration
+
+        :markdown
+          By reviewing these concepts with PMM, DS and UX Researcher, we effectively narrowed our solution to:
 
           * We will focus on the client brand and not measure competitors
           * The signal we capture includes connection to both the brand and its values
@@ -76,21 +86,61 @@ block project-content
           Visual & Interaction
           Given the concept chosen, I started to explore visual and interaction design in more details. Illustrations are placeholders. Content Strategist was also involved to fill in draft content.
 
+        .project-gallery
+          a.fluidbox(href='../../images/design/brand-3.png')
+              img(src='../../images/design/brand-3.png', alt='', title='')
+            label.image-caption Visual exploration
+
+        :markdown
           I used Framer to prototype to illustrate the full interaction flow.
 
+        video(src='slide-drag.mp4', type='video/mp4', autoplay='true', loop='true')
+          p.
+            Your browser does not support the video element.
+
+        :markdown
           Specifically, we need to make a decision between drag vs. slide interaction.
 
           We decided to use slider because:
+
           * The slider more closely approximates the established metric
           * The slider communicates more clearly the affordance and the range of options
 
           ### Illustration
           I worked with an external illustrator via Email to get the assets ready before the campaign launch. I communicated with him the design brief, asset requirements and he sent me proposals for feedback. We started from rough sketches and through 6 rounds of iterations we settled on the final version.
 
+        .project-gallery
+          a.fluidbox(href='../../images/design/brand-4.jpg')
+              img(src='../../images/design/brand-4.jpg', alt='', title='')
+            label.image-caption Illustration iterations
+
+        :markdown
           ## Launch
           I collaborated with PMM and engineers to finalize campaign schedule and ship timeline and made sure design QA would happen before Eng testing.
 
           We successfully launched this poll with Uber Brand campaign in 2017Q4.
+
+          ## Price Premium Format
+
+          Following a similar process, we launched another poll format with Mondelez (the parent company of Oreos). This format focuses on measuring Price Premium. The hypothesis is that brand ads can help build and strengthen the brand image, giving advertisers ability to charge a higher price compared to competitors.
+
+        video(src='price-premium.mp4', type='video/mp4', autoplay='true', loop='true')
+          p.
+            Your browser does not support the video element.
+
+        :markdown
+          ## Data Analysis
+          * Both are promising. Both formats agreed with comparable standard formats directionally and appear to produce greater signal.
+            * Price Premium format measured a -5.9 point stat sig lift while the comparable standard format measured a -1.6 point non-stat sig lift.
+            * Connection format measured a stat sig 22 pt lift in connection score, while the comparable standard format measured a stat sig 2.8 point lift.
+          * The CTR from the feed is significantly lower than standard formats. This needs to be fixed before we can be more conclusive with the potential of the new formats.
+
+          ## Learnings
+          * Have learned to drive project forward with XFN partners without much help from PM
+          * Have learned to involve Eng early and manage the risk of delay
+          * Have learned to work with remote partners
+          * Have learned to make design decisions with feedback from diverse perspectives
+          * Have improved on craft of visual and interaction design
 
 
   +back({url: '/design'})(class='back')
