@@ -1,0 +1,39 @@
+extends ../../_layouts/project
+
+include ../../_modules/back/back
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../'
+
+block project-content
+  .project-content
+    .row
+      .large-10.medium-12.large-offset-1.columns
+        h1.
+          Brand Lift Report
+
+        h4.
+          New Brand Lift report that helps advertisers understand and act on results.
+
+        video(src='brandreport.mp4', type='video/mp4', autoplay='true', loop='true')
+          p.
+            Your browser does not support the video element.
+
+        p.
+          Lift is the most scientific way we offer to measure effectiveness of advertising. 3 years prior to this project, we launched the managed lift product. Since then, we had gathered feedback that advertisers have trouble understanding the report and acting on the results. As we more to a unified, self-serve solution, the existing report would not be able to fulfill the needs.
+        p.
+          I led the design effort in redesigning the Brand Lift report, working closely with UX Research and Content Strategist to make sure advertisers could accurately understand the results without expert statistics knowledge and know what actions to take.
+
+        p.
+          In parallel, I worked with another designer in developing the lift reporting framework that is extensible and focuses on actionability.
+
+        p.
+          The report was built and shipped together with the self-serve Brand Lift solution. The project had contributed to our top-line metric: measured spend (I did not get to see the detail analysis).
+
+        :markdown
+          ## Context
+
+
+
+  +back({url: '/design'})(class='back')

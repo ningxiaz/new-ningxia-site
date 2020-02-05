@@ -1,6 +1,11 @@
 [{
+  "name": "Brand Lift Report",
+  "label": "Desktop, Business, Facebook.",
+  "thumbnail": "../../images/design/brandreport.jpg",
+  "link": "/design/brandreport"
+} , {
   "name": "Brand Equity Polling",
-  "label": "Mobile, Facebook.",
+  "label": "Mobile, Consumer, Facebook.",
   "thumbnail": "../../images/design/brand.jpg",
   "link": "/design/brand"
 }, {
