@@ -1,0 +1,200 @@
+<!DOCTYPE html><!--[if lt IE 9]>
+<html class='lt-ie9 no-js' lang='en'>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Ningxia Zhang</title>
+  <meta name="description" content="a New York-based, China-born product designer. Previously at Facebook, Stanford.">
+  <meta name="author" content="Ningxia Zhang">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../images/favicon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="../../images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../../images/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <link rel="stylesheet" type="text/css" href="https://use.typekit.net/jjf5dfz.css">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-79140776-1', 'auto');
+    ga('send', 'pageview');
+    
+    
+  </script>
+</head>
+<body>
+  <!--[if lt IE 9]>
+  <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="project-content">
+    <div class="row">
+      <div class="large-10 medium-12 large-offset-1 columns">
+        <h1>
+          Brand Equity Polling
+          
+        </h1>
+        <h4>
+          Capture more brand sentiment signals with novel polling units.
+          
+        </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-7 columns summary">
+        <p>It’s hard for brand advertisers to measure the effectiveness of their brand advertisements on Facebook. The plain polling formats we offered in News Feed were not effective in capturing emotional response or subtle attitude changes.</p>
+        <p>To solve this, we set out to develop novel Brand Equity polling formats that are more effective in capturing brand sentiments and tested with our pilot advertisers on their upcoming campaigns. In this prototype, we attempted to measure how connected consumers felt about the Uber brand.</p>
+        <p>
+          From the data analysis after the campaign, we learned that the new formats agreed with comparable standard formats directionally and appeared to produce greater signal.
+          
+          
+        </p>
+      </div>
+      <div class="large-5 columns">
+        <video src="brand-final-1.mp4" type="video/mp4" autoplay loop>
+          <p>
+            Your browser does not support the video element.
+            
+            
+          </p>
+        </video>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-10 medium-12 large-offset-1 columns"><h2>Context</h2>
+
+<p>I was working on the Lift team within Measurement under the Ads org at Facebook. I was the only designer on this project, collaborating with PM, UX Researcher, Content Strategist, Data Scientist (DS) , Product Marketing Manager (PMM), Illustration Contractor and Mobile Engineers.</p>
+
+<h3>What is Brand Lift?</h3>
+
+<p>Advertisers use Brand Lift to measure the effectiveness of their brand advertising on Facebook.</p>
+
+<p>We randomize target audience into test and control groups; we only serve ads to the test group; we later serve polls in News Feed asking both groups questions regarding the brand; we then compare the rates of favorable responses between test and control and see if there’s a lift.</p>
+
+<h3>Problem</h3>
+
+<p>Standard brand polling methods do not have the ability to measure mid-funnel and bottom funnel brand metrics, such as Message Association, Purchase Intent, in a sensitive way.</p>
+        <div class="project-gallery"><a href="../../images/design/brand-1.jpg" class="fluidbox"><img src="../../images/design/brand-1.jpg" alt=""></a>
+          <label class="image-caption">Standard brand polling units</label>
+        </div><p>This could be that the plain polling format is not effective in capturing emotional response or subtle attitude changes.</p>
+
+<h3>Project Goals</h3>
+
+<ul><li>Develop new polling formats that are more effective in capturing emotional response and subtle attitude changes.</li><li>Develop corresponding new equity signal metrics, with which we can package it as a solution to brand advertisers.</li><li>The polling formats should not affect user sentiment/engagement of the core Facebook experience.</li></ul>
+
+<h2>Design</h2>
+
+<h3>Explore</h3>
+
+<p>Suggested by our UX Researcher with a PhD in social psychology, we planned to use a common method to measure connection in social science research. In this method, participant is asked to select the visual representation of two circles that most accurately describes the connection they have to a certain concept.</p>
+
+<p>See academic paper: <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.621.219&amp;rep=rep1&amp;type=pdf">Ingroup Identification as the Inclusion of Ingroup in the Self - Linda R. Tropp, Stephen C. Wright, 2001</a>.</p>
+
+<p>I then explored some UI concepts and used them to help answer some open questions, such as whether we would want to measure connection to competitors or not.</p>
+        <div class="project-gallery"><a href="../../images/design/brand-2.png" class="fluidbox"><img src="../../images/design/brand-2.png" alt=""></a>
+          <label class="image-caption">Initial exploration</label>
+        </div><p>By reviewing these concepts with PMM, DS and UX Researcher, we effectively narrowed our solution to:</p>
+
+<ul><li>We will focus on the client brand and not measure competitors</li><li>The signal we capture includes connection to both the brand and its values</li><li>We will first let user pick how they want to use two circles to represent connection, then use a multi-choice question to further probe the reasons</li><li>We would not include social factor, as we want measure true value choices, not how people want to appear among friends</li><li>The verticals that work well with this format: Tech, Retail, Luxury, Chain restaurants</li></ul>
+
+<p>Visual &amp; Interaction
+Given the concept chosen, I started to explore visual and interaction design in more details. Illustrations are placeholders. Content Strategist was also involved to fill in draft content.</p>
+        <div class="project-gallery"><a href="../../images/design/brand-3.png" class="fluidbox"><img src="../../images/design/brand-3.png" alt=""></a>
+          <label class="image-caption">Visual exploration</label>
+        </div><p>I used Framer to prototype to illustrate the full interaction flow.</p>
+        <video src="slide-drag.mp4" type="video/mp4" autoplay loop>
+          <p>
+            Your browser does not support the video element.
+            
+          </p>
+        </video><p>Specifically, we need to make a decision between drag vs. slide interaction.</p>
+
+<p>We decided to use slider because:</p>
+
+<ul><li>The slider more closely approximates the established metric</li><li>The slider communicates more clearly the affordance and the range of options</li></ul>
+
+<h3>Illustration</h3>
+
+<p>I worked with an external illustrator via Email to get the assets ready before the campaign launch. I communicated with him the design brief, asset requirements and he sent me proposals for feedback. We started from rough sketches and through 6 rounds of iterations we settled on the final version.</p>
+        <div class="project-gallery"><a href="../../images/design/brand-4.jpg" class="fluidbox"><img src="../../images/design/brand-4.jpg" alt=""></a>
+          <label class="image-caption">Illustration iterations</label>
+        </div><h2>Launch</h2>
+
+<p>I collaborated with PMM and engineers to finalize campaign schedule and ship timeline and made sure design QA would happen before Eng testing.</p>
+
+<p>We successfully launched this poll with Uber Brand campaign in 2017Q4.</p>
+
+<h2>Price Premium Format</h2>
+
+<p>Following a similar process, we launched another poll format with Mondelez (the parent company of Oreos). This format focuses on measuring Price Premium. The hypothesis is that brand ads can help build and strengthen the brand image, giving advertisers ability to charge a higher price compared to competitors.</p>
+        <video src="price-premium.mp4" type="video/mp4" autoplay loop>
+          <p>
+            Your browser does not support the video element.
+            
+          </p>
+        </video><h2>Data Analysis</h2>
+
+<ul><li>Both are promising. Both formats agreed with comparable standard formats directionally and appear to produce greater signal.<ul><li>Price Premium format measured a -5.9 point stat sig lift while the comparable standard format measured a -1.6 point non-stat sig lift.</li><li>Connection format measured a stat sig 22 pt lift in connection score, while the comparable standard format measured a stat sig 2.8 point lift.</li></ul></li><li>The CTR from the feed is significantly lower than standard formats. This needs to be fixed before we can be more conclusive with the potential of the new formats.</li></ul>
+
+<h2>Learnings</h2>
+
+<ul><li>Have learned to drive project forward with XFN partners without much help from PM</li><li>Have learned to involve Eng early and manage the risk of delay</li><li>Have learned to work with remote partners</li><li>Have learned to make design decisions with feedback from diverse perspectives</li><li>Have improved on craft of visual and interaction design</li></ul>
+      </div>
+    </div>
+  </div>
+  <div class="back"><a href="/design"><img src="../../images/arrow.svg" class="back-img"></a></div>
+  <div>
+    <footer>
+      <div class="row content--fadeIn">
+        <div class="large-12 columns clearfix footer-content">
+          <div class="footer-contact">
+            <label>Say Hi:</label><a href="mailto:ningxia.z@gmail.com">ningxia.z@gmail.com</a>
+          </div>
+          <div class="footer-copyright">
+            <p>2020 © Ningxia Zhang</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="menu">
+    <div class="menu-button"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+    <div class="menu-overlay">
+      <div class="row">
+        <div class="large-12 columns">
+          <nav>
+            <ul>
+              <li><a href="/about">About</a></li>
+              <li><a href="/design">Design</a></li>
+              <li><a href="/art">Art</a></li>
+              <li><a href="/code">Code</a></li>
+              <!-- li-->
+              <!--   a(href='/writing' class= active === 'writing'? 'is-active': '') Writing-->
+              <!-- li-->
+              <!--   a(href='/music' class= active === 'music'? 'is-active': '') Music-->
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="menu-contact">
+            <label>Say Hi</label>
+            <p><a href="mailto:ningxia.z@gmail.com">ningxia.z@gmail.com</a></p>
+          </div>
+          <div class="menu-contact">
+            <label>Connect With Me</label>
+            <p><a href="https://www.instagram.com/ningxiazzzzzzzz/" target="_blank">Instagram</a><a href="https://twitter.com/ningxiaz" target="_blank">Twitter</a><a href="https://www.linkedin.com/in/ningxiazhang" target="_blank">LinkedIn</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../scripts/main.js"></script>
+</body></html>
