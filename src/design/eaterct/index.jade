@@ -1,0 +1,166 @@
+extends ../../_layouts/project
+
+include ../../_modules/back/back
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../'
+
+block project-content
+  .project-content
+    .row
+      .large-10.medium-12.large-offset-1.columns
+        h1.
+          Eater Charge Thresholds
+
+        h4.
+          Charging and refunding eaters for item customizations they make when ordering.
+
+    .row
+      .large-6.columns.summary
+        p.
+          Charge threshold allows restaurants to charge or refund eaters based on the customization choices they make.
+        p.
+          Previously, we have worked on charge thresholds on the modifier option (customization option) level. For example, the default recipe comes with 3 slices of tomatoes. You will be charged extra if you go over 5 slices and you will be refunded if you remove to under 2 slices.
+        p.
+          In order to support some of our enterprise restaurant partners, we need to further enable charge thresholds on the modifier group (customizations) level. For example, say that you have a “Choose Your Toppings” modifier group, you get charged extra only when you go over the “charge above” threshold. You get refunded when the number of items you select is under “refund under” threshold.
+        p.
+          This is a particularly challenging project including designing a clear consumer experience and touching a variety of surfaces for different user groups.
+
+        p.
+          The project is being rolled out right now.
+
+
+      .large-6.columns
+        video(src='charge_above.mp4', type='video/mp4', autoplay='true', loop='true')
+          p.
+            Your browser does not support the video element.
+
+
+    .row
+      .large-10.medium-12.large-offset-1.columns
+        :markdown
+          ## Context
+          I work on the Restaurant team at Uber Eats responsible of all projects related to menus. For this project, I worked closely with PM, Content Strategist and designers on the Eater team based in San Francisco.
+
+          ### Problem
+          Currently our menu structures do not support charge thresholds at a modifier group level, only at a modifier level.
+
+        .project-gallery
+          a.fluidbox(href='../../images/design/gct-option-ct.png')
+              img(src='../../images/design/gct-option-ct.png', alt='', title='')
+            label.image-caption
+
+        :markdown
+          This was previously scoped as part of the Charge Thresholds project but was descoped due to attribution complexities. Specifically, when eater goes above the charge threshold, it’s difficult to attribute which option contributed to the extra charge (same goes for refund under). This becomes particularly troublesome when each option costs differently. Should we charge the most expensive one, or least or the last one eater selected?
+
+        .project-gallery
+          a.fluidbox(href='../../images/design/gct-problem.png')
+              img(src='../../images/design/gct-problem.png', alt='', title='')
+            label.image-caption
+
+        :markdown
+          To simplify, we will only allow this feature to be applied on a modifier group whose modifier options all have the same price. We will also not try attributing the specific option that contributed to the extra charge /  refund. We will just show the total price difference on the modifier group level.
+
+          ### Why is it important?
+          Some of our enterprise partners require this feature to have their menus on our platform.
+
+          It adds to our library of complex menu structures that gives all restaurants wanting to use this feature a way to do so, especially for restaurants with complex customizations, such as salad bars, poke places etc.
+
+          ## Design
+          The eater-facing experience would be on both mobile and desktop. For this project, I took a mobile-first approach.
+
+          ### Menu Experience
+          I started with exploring have a summary bar to display the extra charge or refund.
+
+        .project-gallery
+          a.fluidbox(href='../../images/design/gct-summary.png')
+              img(src='../../images/design/gct-summary.png', alt='', title='')
+            label.image-caption
+
+        :markdown
+          After design reviews with the Eater team, the feedback suggested that the summary bar might be confused as another item, as it’s not visually differentiated enough. It also feels disconnected from the rule “includes 5” (meaning you don’t need to pay extra if you choose below or equal to five options). We need to push the visual and content further to explain what’s going on.
+
+          I iterated with Content Strategist on the visual and content, quickly realizing that it’s probably better to tie the rule and the charge/refund summary together. We worked with Eng to test different rules and tested it with localization. After a few more iterations on visual details, we made the decision on final treatment.
+
+        .project-gallery
+          a.fluidbox(href='../../images/design/gct-final-charge.png')
+              img(src='../../images/design/gct-final-charge.png', alt='', title='')
+            label.image-caption
+
+        .project-gallery
+          a.fluidbox(href='../../images/design/gct-final-refund.png')
+              img(src='../../images/design/gct-final-refund.png', alt='', title='')
+            label.image-caption
+
+        .project-gallery
+          a.fluidbox(href='../../images/design/gct-cases.png')
+              img(src='../../images/design/gct-cases.png', alt='', title='')
+            label.image-caption
+
+        :markdown
+          ### Checkout Experience
+          On the checkout page, eater needs to see a summary of the order, including the customizations, before confirming to pay.
+
+          For this feature to work, we need to modify the order summary to have extra charge/refund on the modifier group level. We need to add the modifier group header and attribute on the group level.
+
+          Meanwhile, I realized the current order summary is messy and inconsistent. So I decided to clean it up with this project.
+
+          A straightforward instinct would be showing all the selected options in the order summary. For example, Bubble Tea, Hot, 50% Sugar, Add Boba. It gets complicated when you have a default recipe, with lots of ways to customize it. For example, a salad bowl can have a default ingredient list. You can add 2 more slices of apple and replace kale with spinach. Should we show the final results of the customization, which can be a very long list, or should we just show the delta, the things you’ve changed.
+
+        .project-gallery
+          a.fluidbox(href='../../images/design/gct-checkout.png')
+              img(src='../../images/design/gct-checkout.png', alt='', title='')
+            label.image-caption
+
+        :markdown
+          Option 1: Full result list. Pros: If you’re not familiar with the default recipe, it helps you review the result you’re going to get. It can answer the question: how many slices of apple in total I’m going to get. Cons: It can be long and not scannable.
+
+          Option 2: The delta only. Pros: It is clean and easy to scan. If you’ve ordered a few times, you don’t need to see the default recipe over and over again. Cons: It’s hard to answer the question: how many slices of apple in total I’m going to get.
+
+          After some competitor analysis, I realized that most competitors use Option 2. We also noticed that, it’s easy to go back to the menu to review all the select options. It’s enough to just show the delta here.
+
+          Then I realized that the semantics are different between different selectors, such as radio buttons, checkboxes and incrementors. Each cases might need different treatment. I worked with Content Strategist to map out all the scenarios and tried to find a solution that is consistent, accurately communicates the semantics and is easy for localization.
+
+        .project-gallery
+          a.fluidbox(href='../../images/design/gct-logic.png')
+              img(src='../../images/design/gct-logic.png', alt='', title='')
+            label.image-caption
+
+        :markdown
+          As engineers were building according to my spec, they raised some technical constraints. For example, for nested modifiers it would be hard to visually illustrate the tree structure in the summary. I proposed to flatten the nesting structure, as it doesn’t take away the clarity and it’s easier to build.
+
+        .project-gallery
+          a.fluidbox(href='../../images/design/gct-simplify.png')
+              img(src='../../images/design/gct-simplify.png', alt='', title='')
+            label.image-caption
+
+        :markdown
+          ### Web Experience
+          After the mobile experience was finalized, it was straightforward to translate it into web experience. I worked with the designer on web Eats to make sure the designs fit into her framework.
+
+        .project-gallery
+          a.fluidbox(href='../../images/design/gct-web.png')
+              img(src='../../images/design/gct-web.png', alt='', title='')
+            label.image-caption
+
+        :markdown
+          ### Receipts & Other Restaurant Surfaces
+          The addition of the feature affects many other surfaces, such as receipts (mobile in-app and email), Restaurant Dashboard (the tablet app that the front of the house uses to process orders), Restaurant Manager (the web app where restaurant owners check eater reviews, order history, payouts etc.).
+
+        .project-gallery
+          a.fluidbox(href='../../images/design/gct-other.png')
+              img(src='../../images/design/gct-other.png', alt='', title='')
+            label.image-caption
+
+        :markdown
+          For each of the case, I examined the user needs and made changes accordingly. For example, for Restaurant Dashboard, it’s important for the chef to see the full ingredient list, instead of relying on his/her memory for the default recipe.
+
+          ## Learnings
+          * Menu projects are typically complex in nature. This project is especially challenging to embed complicated logic in a consumer experience.
+          * I improved my skills to coordinate cross-team collaboration by working with the Eater team in SF.
+          * I learned to tackle a project that systematically affects many surfaces.
+
+
+
+  +back({url: '/design'})(class='back')

@@ -1,9 +1,14 @@
 [{
+  "name": "Eater Charge Threshold",
+  "label": "Mobile, Consumer, Uber Eats.",
+  "thumbnail": "../../images/design/eaterct.jpg",
+  "link": "/design/eaterct"
+}, {
   "name": "Brand Lift Report",
   "label": "Desktop, Business, Facebook.",
   "thumbnail": "../../images/design/brandreport.jpg",
   "link": "/design/brandreport"
-} , {
+}, {
   "name": "Brand Equity Polling",
   "label": "Mobile, Consumer, Facebook.",
   "thumbnail": "../../images/design/brand.jpg",
