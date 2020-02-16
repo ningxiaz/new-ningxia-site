@@ -1,0 +1,31 @@
+extends ../../_layouts/project
+
+include ../../_modules/back/back
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../'
+
+block project-content
+  .project-content
+    .row
+      .large-10.medium-12.large-offset-1.columns
+        h1.
+          Weightless
+
+        div(style='padding:53.28% 0 0 0;position:relative;margin-bottom:36px')
+          iframe(src='https://player.vimeo.com/video/252110088', style='position:absolute;top:0;left:0;width:100%;height:100%;', frameborder='0', allow='autoplay; fullscreen', allowfullscreen)
+        script(src='https://player.vimeo.com/api/player.js')
+
+        :markdown
+          In 2018, I started to be interested in Virtual Reality. [A-Frame](https://aframe.io/) is a WebVR library that makes it easy to create VR experiences with Web technologies that I'm already familiar with.
+
+          Weightless is a series of VR installations, with generative, minimal and geometric qualities. In a virtual world, physics doesn’t naturally apply and repetition happens at milliseconds. These works explore such a medium and pose the questions of the distinctions of the two worlds.
+
+          You can experience it here: [https://weightless.glitch.me/](https://weightless.glitch.me/).
+
+          Support desktop browsers (keyboard and mouse interactions), mobile browsers (tilting and tapping) and Google Cardboard. Use your cursor to click on the doors to navigate.
+
+          It was featured on the weekly blog A-Frame [A Week of A-Frame 96 + 97](https://aframe.io/blog/awoa-96-97/).
+
+  +back({url: '/code'})(class='back')

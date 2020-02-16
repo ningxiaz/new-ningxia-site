@@ -1,0 +1,40 @@
+extends ../../_layouts/project
+
+include ../../_modules/back/back
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../'
+
+block project-content
+  .project-content
+    .row
+      .large-10.medium-12.large-offset-1.columns
+        h1.
+          Shader Camera
+
+        .project-gallery
+          a.fluidbox(href='../../images/code/shader.jpg')
+              img(src='../../images/code/shader.jpg', alt='', title='')
+            label.image-caption Selfies I took with the shader camera
+
+        :markdown
+          In 2017, I taught myself GLSL shaders with the wonderful online course [The Book of Shaders](https://thebookofshaders.com/).
+
+          Using the knowledge I've learned, I made a web-based shader camera where you can try out a couple of different visual effects. You can also mix and match them to create new effects.
+
+          Try it out yourself: [https://ningxiaz.github.io/shader-camera/](https://ningxiaz.github.io/shader-camera/).
+
+          The effects include:
+
+          * Black and White
+          * RGB Shift
+          * Dot Patterns
+          * Vertical Shift
+          * Dense Vertical Shift
+          * Horizontal Shift
+          * Duo Tone (Purple and Yellow)
+          * Duo Tone (Blue and Red)
+          * Monotone (Blue)
+
+  +back({url: '/code'})(class='back')

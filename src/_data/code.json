@@ -1,4 +1,14 @@
 [{
+  "name": "Weightless",
+  "label": "Virtual Reality, WebVR, A-Frame.",
+  "thumbnail": "../../images/code/weightless.jpg",
+  "link": "/code/weightless"
+},{
+  "name": "Shader Camera",
+  "label": "GLSL Shader, Three.JS, Web.",
+  "thumbnail": "../../images/code/shader.jpg",
+  "link": "/code/shader"
+},{
   "name": "Phishing Detection",
   "label": "Machine Learning.",
   "thumbnail": "../../images/code/phishing.jpg",
