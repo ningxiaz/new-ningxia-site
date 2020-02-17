@@ -11,7 +11,7 @@ block project-content
     .row
       .large-10.medium-12.large-offset-1.columns
         h1.
-          Eater Charge Thresholds
+          Eater Charge Threshold
 
         h4.
           Charging and refunding eaters for item customizations they make when ordering.
@@ -25,7 +25,7 @@ block project-content
         p.
           In order to support some of our enterprise restaurant partners, we need to further enable charge thresholds on the modifier group (customizations) level. For example, say that you have a “Choose Your Toppings” modifier group, you get charged extra only when you go over the “charge above” threshold. You get refunded when the number of items you select is under “refund under” threshold.
         p.
-          This is a particularly challenging project including designing a clear consumer experience and touching a variety of surfaces for different user groups.
+          This is a particularly challenging project including designing intuitive consumer experience and touching a variety of surfaces for different user groups.
 
         p.
           The project is being rolled out right now.
@@ -41,10 +41,10 @@ block project-content
       .large-10.medium-12.large-offset-1.columns
         :markdown
           ## Context
-          I work on the Restaurant team at Uber Eats responsible of all projects related to menus. For this project, I worked closely with PM, Content Strategist and designers on the Eater team based in San Francisco.
+          I work on the Restaurant team at Uber Eats responsible of all projects related to menus. For this project, I worked closely with PM, Content Strategist, designers on the Eater team based in San Francisco and engineers.
 
           ### Problem
-          Currently our menu structures do not support charge thresholds at a modifier group level, only at a modifier level.
+          Currently our menu structures do not support charge thresholds at a modifier group level, only at a modifier option level.
 
         .project-gallery
           a.fluidbox(href='../../images/design/gct-option-ct.png')
@@ -52,7 +52,7 @@ block project-content
             label.image-caption
 
         :markdown
-          This was previously scoped as part of the Charge Thresholds project but was descoped due to attribution complexities. Specifically, when eater goes above the charge threshold, it’s difficult to attribute which option contributed to the extra charge (same goes for refund under). This becomes particularly troublesome when each option costs differently. Should we charge the most expensive one, or least or the last one eater selected?
+          This was previously scoped as part of the Charge Thresholds project but was descoped due to attribution complexities. Specifically, when eater goes above the charge threshold, it’s difficult to attribute which option contributed to the extra charge (same goes for refund under). This becomes particularly troublesome when each option costs differently. Should we charge the most expensive one, or the least or the last one eater selected?
 
         .project-gallery
           a.fluidbox(href='../../images/design/gct-problem.png')
@@ -65,13 +65,13 @@ block project-content
           ### Why is it important?
           Some of our enterprise partners require this feature to have their menus on our platform.
 
-          It adds to our library of complex menu structures that gives all restaurants wanting to use this feature a way to do so, especially for restaurants with complex customizations, such as salad bars, poke places etc.
+          It also adds to our library of complex menu structures that gives all restaurants wanting to use this feature a way to do so, especially for restaurants with complex customizations, such as salad bars, poke places etc.
 
           ## Design
           The eater-facing experience would be on both mobile and desktop. For this project, I took a mobile-first approach.
 
           ### Menu Experience
-          I started with exploring have a summary bar to display the extra charge or refund.
+          I started where the previous designer left off, where he explored having a summary bar to display the extra charge or refund.
 
         .project-gallery
           a.fluidbox(href='../../images/design/gct-summary.png')
@@ -102,11 +102,11 @@ block project-content
           ### Checkout Experience
           On the checkout page, eater needs to see a summary of the order, including the customizations, before confirming to pay.
 
-          For this feature to work, we need to modify the order summary to have extra charge/refund on the modifier group level. We need to add the modifier group header and attribute on the group level.
+          For this feature to work, we need to modify the order summary to add the modifier group header and attribute on the group level.
 
           Meanwhile, I realized the current order summary is messy and inconsistent. So I decided to clean it up with this project.
 
-          A straightforward instinct would be showing all the selected options in the order summary. For example, Bubble Tea, Hot, 50% Sugar, Add Boba. It gets complicated when you have a default recipe, with lots of ways to customize it. For example, a salad bowl can have a default ingredient list. You can add 2 more slices of apple and replace kale with spinach. Should we show the final results of the customization, which can be a very long list, or should we just show the delta, the things you’ve changed.
+          A straightforward instinct would be showing all the selected options in the order summary. For example, Bubble Tea, Hot, 50% Sugar, Add Boba. It gets complicated when you have a default recipe, with lots of ways to customize it. For example, a salad bowl can have a default ingredient list. You can add 2 more slices of apple and replace kale with spinach. Should we show the final results of the customization, which can be a very long list, or should we just show the delta, the things you’ve changed?
 
         .project-gallery
           a.fluidbox(href='../../images/design/gct-checkout.png')
@@ -118,9 +118,9 @@ block project-content
 
           Option 2: The delta only. Pros: It is clean and easy to scan. If you’ve ordered a few times, you don’t need to see the default recipe over and over again. Cons: It’s hard to answer the question: how many slices of apple in total I’m going to get.
 
-          After some competitor analysis, I realized that most competitors use Option 2. We also noticed that, it’s easy to go back to the menu to review all the select options. It’s enough to just show the delta here.
+          After some competitor analysis, I realized that most competitors use Option 2. We also noticed that, it’s easy to go back to the menu to review all the selected options. It’s enough to just show the delta here.
 
-          Then I realized that the semantics are different between different selectors, such as radio buttons, checkboxes and incrementors. Each cases might need different treatment. I worked with Content Strategist to map out all the scenarios and tried to find a solution that is consistent, accurately communicates the semantics and is easy for localization.
+          Then I realized that the semantics are different between different selectors, such as radio buttons, checkboxes and incrementors. Each cases might need different treatment. I worked with Content Strategist to map out all the scenarios and tried to find a solution that is consistent, accurate and easy for localization.
 
         .project-gallery
           a.fluidbox(href='../../images/design/gct-logic.png')
@@ -128,7 +128,7 @@ block project-content
             label.image-caption
 
         :markdown
-          As engineers were building according to my spec, they raised some technical constraints. For example, for nested modifiers it would be hard to visually illustrate the tree structure in the summary. I proposed to flatten the nesting structure, as it doesn’t take away the clarity and it’s easier to build.
+          As engineers were building according to my spec, more questions emerged. For example, it would be hard to build a scalable UI for nested modifiers, which can be up to 6 levels deep. I proposed to flatten the nesting structure, as it doesn’t take away the clarity and it’s easier and more scalable to build.
 
         .project-gallery
           a.fluidbox(href='../../images/design/gct-simplify.png')
@@ -146,7 +146,7 @@ block project-content
 
         :markdown
           ### Receipts & Other Restaurant Surfaces
-          The addition of the feature affects many other surfaces, such as receipts (mobile in-app and email), Restaurant Dashboard (the tablet app that the front of the house uses to process orders), Restaurant Manager (the web app where restaurant owners check eater reviews, order history, payouts etc.).
+          The addition of the feature affects many other surfaces, such as receipts (mobile in-app and email), Restaurant Dashboard (the tablet app that the restaurant staff uses to process orders), Restaurant Manager (the web app where restaurant owners check eater reviews, order history, payouts etc.).
 
         .project-gallery
           a.fluidbox(href='../../images/design/gct-other.png')
